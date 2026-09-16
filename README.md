@@ -18,8 +18,9 @@ Claude Code 跟地城領主/地下城主（Dungeon Master）有什麼關係！�
 |---|---|---|---|---|
 | 1 | [裝好 Claude Code，來開第一局吧!](articles/01/day01.md) | Claude 與 Claude Code 是什麼、方案與介面、安裝登入、選模型與 effort、空資料夾開一局玩七回合 | 裝得起來、知道模型和 effort 怎麼選以及各花多少錢、看到一個沒有骰子的 DM 怎麼編數字 | 已完成 |
 | 2 | [梅拉不見了：對話存在哪裡、怎麼拿回來](articles/02/day02.md) | 重開一局梅拉不見；session 存在 `~/.claude/projects/` 的 `.jsonl`；`--resume`、`-c` 拿回來；換資料夾、換電腦、30 天清理三個常見問題 | 對話是本機檔案，resume 是補救不是設計；世界設定該住在檔案裡 | 已完成 |
-| 3 | 待定 | 世界設定寫進 CLAUDE.md | | 撰寫中 |
-| 4–30 | 待定 | 一天加一樣東西：工具、Skill、MCP、Hook…… | | 未開始 |
+| 3 | [把世界寫進 CLAUDE.md，梅拉不用 resume 也在](articles/03/day03.md) | CLAUDE.md 是什麼、Global／Project／Local 三層、把 Day 1 的世界寫進去、開新局直接認得梅拉、`/context` 看它讀了什麼、`@` 引用其他檔案 | 不變的設定住檔案；它是提示不是規則引擎；會變的數字要另找地方 | 已完成 |
+| 4 | 待定 | 內建工具：state.json 與 Get-Random 骰子 | | 撰寫中 |
+| 5–30 | 待定 | 一天加一樣東西：Skill、MCP、Hook…… | | 未開始 |
 
 大綱採滾動式調整，寫到哪裡更新到哪裡。
 
@@ -28,7 +29,7 @@ Claude Code 跟地城領主/地下城主（Dungeon Master）有什麼關係！�
 | 路徑 | 內容 |
 |---|---|
 | `articles/NN/dayNN.md` | 每天一篇文章，圖片放同層的 `assets/` |
-| `dungeon/` | 實際操作的資料夾，每天的過程與產物留在這裡 |
+| `articles/NN/dungeon/` | 那一天結束時 `dungeon` 資料夾的內容，照著做可以對答案 |
 
 ## 要跟著做的話
 
