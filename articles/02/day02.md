@@ -75,3 +75,8 @@ claude --resume <session jsonl file path>
 梅拉的名字、艾玲的 HP、麥酒兩枚銅幣，全部只住在那個 `.jsonl` 裡。我得記得每次都 resume 同一局，不能換電腦，不能換資料夾，30 天內要回來。忘了任何一項，梅拉就沒了。
 
 世界設定不應該住在對話裡! 應該要是每一局、每一個 session 開始都能讀取。明天就來做這個檔案吧!
+
+## 目前學會的 Claude Code 機制
+
+- ✅ Day 1：安裝與登入、四種介面、`/model`、`/effort`、`/usage`
+- ✅ Day 2：session 與 `.jsonl`、`--resume`、`-c`、`/resume`、`cleanupPeriodDays`
