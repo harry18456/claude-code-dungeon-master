@@ -19,8 +19,9 @@ Claude Code 跟地城領主/地下城主（Dungeon Master）有什麼關係！�
 | 1 | [裝好 Claude Code，來開第一局吧!](articles/01/day01.md) | Claude 與 Claude Code 是什麼、方案與介面、安裝登入、選模型與 effort、空資料夾開一局玩七回合 | 裝得起來、知道模型和 effort 怎麼選以及各花多少錢、看到一個沒有骰子的 DM 怎麼編數字 | 已完成 |
 | 2 | [梅拉不見了：對話存在哪裡、怎麼拿回來](articles/02/day02.md) | 重開一局梅拉不見；session 存在 `~/.claude/projects/` 的 `.jsonl`；`--resume`、`-c` 拿回來；換資料夾、換電腦、30 天清理三個常見問題 | 對話是本機檔案，resume 是補救不是設計；世界設定該住在檔案裡 | 已完成 |
 | 3 | [把世界寫進 CLAUDE.md，梅拉不用 resume 也在](articles/03/day03.md) | CLAUDE.md 是什麼、Global／Project／Local 三層、把 Day 1 的世界寫進去、開新局直接認得梅拉、`/context` 看它讀了什麼、`@` 引用其他檔案 | 不變的設定住檔案；它是提示不是規則引擎；會變的數字要另找地方 | 已完成 |
-| 4 | 待定 | 內建工具：state.json 與 Get-Random 骰子 | | 撰寫中 |
-| 5–30 | 待定 | 一天加一樣東西：Skill、MCP、Hook…… | | 未開始 |
+| 4 | [讓 Claude Code 紀錄血量與骰骰子吧！](articles/04/day04.md) | 內建工具 Read／Bash／Edit；HP 搬進 `state.json`；骰子改用終端機指令 `$RANDOM`；`Ctrl+O` 看工具細節；auto mode 自動放行 | 會變的數字住檔案，交給 Claude Code 讀寫；每次動手畫面上都看得到；CLAUDE.md 是請它做，不是強制 | 已完成 |
+| 5 | 待定 | checkpoint 與 `/rewind` | | 撰寫中 |
+| 6–30 | 待定 | 一天加一樣東西：Skill、MCP、Hook…… | | 未開始 |
 
 大綱採滾動式調整，寫到哪裡更新到哪裡。
 
