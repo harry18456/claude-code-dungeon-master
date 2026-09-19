@@ -21,8 +21,9 @@ Claude Code 跟地城領主/地下城主（Dungeon Master）有什麼關係！�
 | 3 | [把世界寫進 CLAUDE.md，梅拉不用 resume 也在](articles/03/day03.md) | CLAUDE.md 是什麼、Global／Project／Local 三層、把 Day 1 的世界寫進去、開新局直接認得梅拉、`/context` 看它讀了什麼、`@` 引用其他檔案 | 不變的設定住檔案；它是提示不是規則引擎；會變的數字要另找地方 | 已完成 |
 | 4 | [讓 Claude Code 紀錄血量與骰骰子吧！](articles/04/day04.md) | 內建工具 Read／Bash／Edit；HP 搬進 `state.json`；骰子改用終端機指令 `$RANDOM`；`Ctrl+O` 看工具細節；auto mode 自動放行 | 會變的數字住檔案，交給 Claude Code 讀寫；每次動手畫面上都看得到；CLAUDE.md 是請它做，不是強制 | 已完成 |
 | 5 | [我不依我不依（地上打滾），我要回到上一個動作：/rewind](articles/05/day05.md) | 接回昨天那局打死巨鼠；搜地窖只撿到 1 枚就倒帶重刷；checkpoint 存在哪（`.jsonl` 與 `file-history/`）、對話是一棵樹；`/rewind` 六個選項；`/branch` | 每句話都是存檔點，檔案和對話可以分開倒；bash 和手動改的檔案倒不回來 | 已完成 |
-| 6 | 待定 | Skill：把「休息」做成 `/rest` | | 撰寫中 |
-| 7–30 | 待定 | 一天加一樣東西：MCP、Hook…… | | 未開始 |
+| 6 | [休息一晚回血：把偶爾才用的規則做成 Skill](articles/06/day06.md) | Skill 是什麼、資料夾結構、Agent Skills 標準的六個欄位與 Claude Code 的擴充；寫 `/rest`；打 `/rest` 與說「我想睡一覺」讓 DM 自己叫；`/context` 對 token；skill-creator | 永遠要記得的放 CLAUDE.md，要用再拿出來的做 Skill；description 決定會不會被自動挑中 | 已完成 |
+| 7 | 待定 | 權限：ask／allow／deny，誰允許 DM 動手 | | 撰寫中 |
+| 8–30 | 待定 | 一天加一樣東西：Skill 進階、MCP、Hook…… | | 未開始 |
 
 大綱採滾動式調整，寫到哪裡更新到哪裡。
 
