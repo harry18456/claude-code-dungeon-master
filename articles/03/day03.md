@@ -110,3 +110,7 @@ HP！`CLAUDE.md` 寫的是 12，所以每一局艾玲都是 12。昨天被巨鼠
 - ✅ Day 1：安裝與登入、四種介面、`/model`、`/effort`、`/usage`
 - ✅ Day 2：session 與 `.jsonl`、`--resume`、`-c`、`/resume`、`cleanupPeriodDays`
 - ✅ Day 3：CLAUDE.md 三層、`@` 匯入、`/context`、`/init`
+
+## 2026-09-19 補充：AGENTS.md
+
+Claude Code 2.1.277（2026-09-18 發布）開始支援 `AGENTS.md`，也就是其他 AI 工具通用的專案設定檔。規則是：資料夾和上層都找不到 `CLAUDE.md`／`CLAUDE.local.md` 時，Claude Code 會改讀 `AGENTS.md`；兩種都有的話，只讀 CLAUDE.md。詳細可參考[官方文件](https://code.claude.com/docs/zh-TW/memory#agents-md)。
