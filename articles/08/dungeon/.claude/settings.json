@@ -1,0 +1,6 @@
+{
+  "permissions": {
+    "allow": ["Bash(bash dice.sh *)"],
+    "deny": ["Edit(CLAUDE.md)"]
+  }
+}
