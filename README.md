@@ -24,8 +24,9 @@ Claude Code 跟地城領主/地下城主（Dungeon Master）有什麼關係！�
 | 6 | [休息一晚回血：把偶爾才用的規則做成 Skill](articles/06/day06.md) | Skill 是什麼、資料夾結構、Agent Skills 標準的六個欄位與 Claude Code 的擴充；寫 `/rest`；打 `/rest` 與說「我想睡一覺」讓 DM 自己叫；`/context` 對 token；skill-creator | 永遠要記得的放 CLAUDE.md，要用再拿出來的做 Skill；description 決定會不會被自動挑中 | 已完成 |
 | 7 | [誰允許 DM 動手的？權限模式與 allow／deny](articles/07/day07.md) | 權限模式（Manual／Accept edits／Plan／Auto，加 dontAsk、bypassPermissions）、`Shift+Tab`；把骰子做成 `dice.sh`；Manual 模式看確認框；`/permissions`、allow／ask／deny、`.claude/settings.json`；信任對話框；deny 擋 `Edit(CLAUDE.md)`、allow 只放行 `bash dice.sh`；Auto 模式分類器的審查順序 | 權限規則由 Claude Code 強制執行，不是由模型；deny 永遠贏；allow 只是不問，不是一定做 | 已完成 |
 | 8 | [/roll d20+2：讓 Skill 吃參數，骰子在進對話之前就骰好](articles/08/day08.md) | Skill 參數 `$ARGUMENTS`、`argument-hint`；`` !`指令` `` 展開：內容進對話之前先跑完指令；`!` 指令要對上 allow 規則、CLAUDE.md 不能跟 Skill 打架 | 指令展開讓骰子一定發生，不是請 Claude Code 去跑；證據翻 `.jsonl`，`Ctrl+O` 看不到 | 已完成 |
-| 9 | 待定 | 誰能叫 Skill：`disable-model-invocation`、`user-invocable`、`allowed-tools` | | 撰寫中 |
-| 10–30 | 待定 | 一天加一樣東西：整理日與 Plan Mode、MCP、Hook…… | | 未開始 |
+| 9 | [這個 Skill 誰能叫？只有我能作弊！](articles/09/day09.md) | `disable-model-invocation`（只有你能叫）、`user-invocable: false`（只有 Claude Code 能叫）、`allowed-tools`（Skill 自己帶權限）；用 `/context` 看哪些 description 進了對話 | 擋的是「誰啟動這個流程」，不是「這件事做不到」；`allowed-tools` 只管那一輪，deny 永遠贏 | 已完成 |
+| 10 | 待定 | 整理日與 Plan Mode | | 撰寫中 |
+| 11–30 | 待定 | 一天加一樣東西：MCP、Hook…… | | 未開始 |
 
 大綱採滾動式調整，寫到哪裡更新到哪裡。
 
