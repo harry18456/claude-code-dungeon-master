@@ -26,8 +26,9 @@ Claude Code 跟地城領主/地下城主（Dungeon Master）有什麼關係！�
 | 8 | [/roll d20+2：讓 Skill 吃參數，骰子在進對話之前就骰好](articles/08/day08.md) | Skill 參數 `$ARGUMENTS`、`argument-hint`；`` !`指令` `` 展開：內容進對話之前先跑完指令；`!` 指令要對上 allow 規則、CLAUDE.md 不能跟 Skill 打架 | 指令展開讓骰子一定發生，不是請 Claude Code 去跑；證據翻 `.jsonl`，`Ctrl+O` 看不到 | 已完成 |
 | 9 | [這個 Skill 誰能叫？只有我能作弊！](articles/09/day09.md) | `disable-model-invocation`（只有你能叫）、`user-invocable: false`（只有 Claude Code 能叫）、`allowed-tools`（Skill 自己帶權限）；用 `/context` 看哪些 description 進了對話 | 擋的是「誰啟動這個流程」，不是「這件事做不到」；`allowed-tools` 只管那一輪，deny 永遠贏 | 已完成 |
 | 10 | [十天了，先別急著加東西：用 Plan Mode 整理資料夾](articles/10/day10.md) | 前九天回顧；Plan Mode（`Shift+Tab`、`/plan`、`Ctrl+G`）；同一個請求比較 Sonnet 5 和 Opus 5.5 的計畫；改計畫；auto mode 的 `[Self-Modification]` 擋下自我放寬權限；`git init` | 計畫是拿來看的，不是照單全收；實測推翻 `Write(path)` deny 有效這個說法；批准計畫不等於它只做計畫裡的事 | 已完成 |
-| 11 | 待定 | Hook：讓骰子聲響起來 | | 撰寫中 |
-| 12–30 | 待定 | 一天加一樣東西：Hook、Statusline、MCP、Subagent…… | | 未開始 |
+| 11 | [中秋節，讓 Claude Code 自己叫你：第一個 Hook](articles/11/day11.md) | Hook 跟前十天的差別；三層結構（事件、matcher、handler）與五種 `type`；`play.ps1` 播 Windows 內建音效、`.ps1` 存 UTF-8 with BOM；`Stop` 講完話叮一聲；`/hooks` 看設定與來源；exit code 的意義；骰子聲的兩條路：`UserPromptExpansion` 接玩家、`PostToolUse` 讀 `tool_input.skill` 接 DM | Hook 由 Claude Code 執行，模型管不著；`!` 展開不是工具呼叫，`PostToolUse` 看不到；聲音只代表 Skill 被叫了，不代表骰子成功 | 已完成 |
+| 12 | 待定 | Hook：守衛擋下不合理的 HP | | 撰寫中 |
+| 13–30 | 待定 | 一天加一樣東西：Hook、Statusline、MCP、Subagent…… | | 未開始 |
 
 大綱採滾動式調整，寫到哪裡更新到哪裡。
 
