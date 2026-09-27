@@ -191,6 +191,8 @@ Source 標籤有這幾種，前三個就是 Day 7 提到的三個 `settings.json
 - 開新對話時的 `SessionStart`：印出來的文字會補進對話。
 - 工具要執行前的 `PreToolUse`：用 exit 2 擋下來時，擋的理由會交給模型。
 
+exit code 之外還有一條路：exit 0，同時在 stdout 印一段 JSON，Claude Code 會讀裡面的欄位。例如 `{"systemMessage": "…"}` 會在畫面上顯示一行訊息給你看，不進對話。
+
 ## 骰子聲比想像中麻煩
 
 第二個想做的 Hook 是骰子聲：每骰一次就叮一聲。
