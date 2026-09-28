@@ -57,11 +57,6 @@ fi
 
 跟 Day 7 的版本比，多了算 `total`、產生編號、寫帳本、印票根這幾行。試一下：
 
-```
-bash dice.sh d20
-bash dice.sh d6+1
-```
-
 ![終端機跑 bash dice.sh d20 印出 d20: 13 [R:332a1f36=13]，再跑 bash dice.sh d6+1 印出 d6+1: 5 + 1 = 6 [R:5c0c1a11=6]](assets/01-dice-ticket.png)
 
 帳本裡多了兩行：
@@ -230,6 +225,8 @@ bash dice.sh d20
 到今天為止，Claude Code DM 要改 HP 有守衛看著，要報的骰子結果有帳本對著。
 
 但 HP、銅幣、現在在哪，還是要問 DM，或是自己打開 `state.json` 檔案才看得到。明天來嘗試把一些遊戲狀態放在介面上吧!
+
+今天結束時 `dungeon` 資料夾的完整內容在 [articles/13/dungeon](https://github.com/harry18456/claude-code-dungeon-master/tree/main/articles/13/dungeon)，給大家參考。
 
 ## 目前學會的 Claude Code 機制
 

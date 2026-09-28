@@ -131,6 +131,8 @@ P.S. 當輸入框有文字時按下兩次 `Esc` 會快速清除輸入，而當�
 
 有沒有辦法做成一個指令，要用再叫出來？明天來講講 Skill 吧！
 
+今天結束時 `dungeon` 資料夾的完整內容在 [articles/05/dungeon](https://github.com/harry18456/claude-code-dungeon-master/tree/main/articles/05/dungeon)，給大家參考。
+
 ## 目前學會的 Claude Code 機制
 
 - ✅ Day 1：安裝與登入、四種介面、`/model`、`/effort`、`/usage`

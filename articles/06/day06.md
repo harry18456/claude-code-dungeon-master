@@ -143,6 +143,8 @@ Skill 的步驟跟 `CLAUDE.md` 一樣，都只是「請 & 希望」DM 這樣做�
 
 另一件事比較新：`/rest` 一打下去，DM 就讀檔、跑指令、改檔，三件事一次做完，一個都沒問我。Day 4 說「誰允許的」之後也會再提到。
 
+今天結束時 `dungeon` 資料夾的完整內容在 [articles/06/dungeon](https://github.com/harry18456/claude-code-dungeon-master/tree/main/articles/06/dungeon)，給大家參考。
+
 ## 目前學會的 Claude Code 機制
 
 - ✅ Day 1：安裝與登入、四種介面、`/model`、`/effort`、`/usage`

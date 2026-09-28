@@ -185,6 +185,8 @@ Auto 模式下一秒鐘就過的事，現在停下來徵求你同意。`Read` �
 
 但注意 allow 只是「不問」，不是「一定做」。`Bash(bash dice.sh *)` 放行了骰子腳本，DM 還是可以選擇不跑。要讓骰子一定發生，得回到 Day 6 表格裡那個「指令展開」，那是 Skill 的事，明天我們來把骰骰子做成 skill 並且可以帶參數以及強制要真的骰，而不是讓 Claude Code DM 看心情要不要骰。
 
+今天結束時 `dungeon` 資料夾的完整內容在 [articles/07/dungeon](https://github.com/harry18456/claude-code-dungeon-master/tree/main/articles/07/dungeon)，給大家參考。
+
 ## 目前學會的 Claude Code 機制
 
 - ✅ Day 1：安裝與登入、四種介面、`/model`、`/effort`、`/usage`

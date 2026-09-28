@@ -212,6 +212,8 @@ PreToolUse:Edit hook error: [powershell.exe -NoProfile -ExecutionPolicy Bypass -
 
 明天來讓每一顆骰子都留下紀錄，DM 講完話時再用 Hook 對一次帳!
 
+今天結束時 `dungeon` 資料夾的完整內容在 [articles/12/dungeon](https://github.com/harry18456/claude-code-dungeon-master/tree/main/articles/12/dungeon)，給大家參考。
+
 ## 目前學會的 Claude Code 機制
 
 - ✅ Day 1：安裝與登入、四種介面、`/model`、`/effort`、`/usage`

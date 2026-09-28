@@ -166,7 +166,7 @@ Windows 有裝 Git Bash 的話，Claude Code 會用 Git Bash 執行這個指令�
 
 明天來看 Claude Code 另一個重要機制：MCP。先接一個現成的 MCP server，看看工具怎麼從外面接進 Claude Code；再自己寫一個最小的骰子 server，讓骰子變成 DM 真正呼叫的工具。往後幾天，攻擊、移動、各種檢定也會一樣一樣交給 MCP 工具。最後 DM 只負責說故事，擲骰、算數字、改狀態都交給工具。
 
-往後文章都會附上 `dungeon` 資料夾的完整內容給大家參考，今天的內容在 [articles/14/dungeon](https://github.com/harry18456/claude-code-dungeon-master/tree/main/articles/14/dungeon)。
+今天結束時 `dungeon` 資料夾的完整內容在 [articles/14/dungeon](https://github.com/harry18456/claude-code-dungeon-master/tree/main/articles/14/dungeon)，給大家參考。
 
 ## 目前學會的 Claude Code 機制
 

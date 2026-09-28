@@ -111,6 +111,8 @@ Day 1 說過 Claude Code 是會動手的 agent。動手靠的是一堆內建工�
 
 還有一件事：既然 Claude Code 會改檔案，那改壞了怎麼辦？打輸了想後悔倒帶呢？明天來說說 `/rewind` 指令吧！
 
+今天結束時 `dungeon` 資料夾的完整內容在 [articles/04/dungeon](https://github.com/harry18456/claude-code-dungeon-master/tree/main/articles/04/dungeon)，給大家參考。
+
 ## 目前學會的 Claude Code 機制
 
 - ✅ Day 1：安裝與登入、四種介面、`/model`、`/effort`、`/usage`

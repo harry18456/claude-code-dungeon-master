@@ -105,6 +105,8 @@ HP！`CLAUDE.md` 寫的是 12，所以每一局艾玲都是 12。昨天被巨鼠
 
 骰子也還沒有處理……規則寫了 d20，但誰來投擲？明天看看要處理這兩個問題還是想先朝其他方向進行好了！
 
+今天結束時 `dungeon` 資料夾的完整內容在 [articles/03/dungeon](https://github.com/harry18456/claude-code-dungeon-master/tree/main/articles/03/dungeon)，給大家參考。
+
 ## 目前學會的 Claude Code 機制
 
 - ✅ Day 1：安裝與登入、四種介面、`/model`、`/effort`、`/usage`

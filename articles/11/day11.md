@@ -296,6 +296,8 @@ exit 0
 
 明天用 `PreToolUse` 加 exit 2 做一個守衛，**看內容**：正常扣血放行，想把 `hp` 設成 80、或把 `max_hp` 偷偷放大，就擋下來。做這件事的不是權限規則，是我們自己寫的程式、我們自己定義的邏輯。
 
+今天結束時 `dungeon` 資料夾的完整內容在 [articles/11/dungeon](https://github.com/harry18456/claude-code-dungeon-master/tree/main/articles/11/dungeon)，給大家參考。
+
 ## 目前學會的 Claude Code 機制
 
 - ✅ Day 1：安裝與登入、四種介面、`/model`、`/effort`、`/usage`

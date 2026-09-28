@@ -174,6 +174,8 @@ Skill 講完了：怎麼寫、怎麼吃參數、怎麼在進對話之前就跑�
 
 但資料夾也開始亂了。`dungeon` 底下現在有 `CLAUDE.md`、`state.json`、`dice.sh`，加上四個 Skill 和一個 `settings.json`。明天不加新東西，回頭整理，順便用一個還沒教過的模式：讓 Claude Code 先擬計畫，我們批准了才動工。
 
+今天結束時 `dungeon` 資料夾的完整內容在 [articles/09/dungeon](https://github.com/harry18456/claude-code-dungeon-master/tree/main/articles/09/dungeon)，給大家參考。
+
 ## 目前學會的 Claude Code 機制
 
 - ✅ Day 1：安裝與登入、四種介面、`/model`、`/effort`、`/usage`

@@ -128,6 +128,8 @@ assistant  text      `d20: 13` 13 對上守衛的警覺（防禦 12），算是�
 
 另外，`/roll` 現在誰都能叫，Claude Code 想骰就骰。有些 Skill 你會希望只有你能叫，有些只想讓 Claude Code 自己用。明天講。
 
+今天結束時 `dungeon` 資料夾的完整內容在 [articles/08/dungeon](https://github.com/harry18456/claude-code-dungeon-master/tree/main/articles/08/dungeon)，給大家參考。
+
 ## 目前學會的 Claude Code 機制
 
 - ✅ Day 1：安裝與登入、四種介面、`/model`、`/effort`、`/usage`

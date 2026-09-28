@@ -263,6 +263,8 @@ Claude Code 已經自己檢查過五項（deny 還在、JSON 合法、`dice.sh` 
 
 接下來要處理的是最大的那個坑：`CLAUDE.md` 和 Skill 裡的每一條規則，Claude Code 都可以不照做。要讓規則變成真的規則，得換一套機制。
 
+今天結束時 `dungeon` 資料夾的完整內容在 [articles/10/dungeon](https://github.com/harry18456/claude-code-dungeon-master/tree/main/articles/10/dungeon)，給大家參考。
+
 ## 目前學會的 Claude Code 機制
 
 - ✅ Day 1：安裝與登入、四種介面、`/model`、`/effort`、`/usage`
