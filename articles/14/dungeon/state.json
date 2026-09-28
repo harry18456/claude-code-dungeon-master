@@ -1,0 +1,13 @@
+{
+  "name": "艾玲",
+  "hp": 10,
+  "max_hp": 12,
+  "copper": 77,
+  "location": "舊地窖",
+  "inventory": ["短劍"],
+  "flags": {
+    "cellar_quest_accepted": false,
+    "cellar_loot_searched": false,
+    "giant_rat_hp": 6
+  }
+}
