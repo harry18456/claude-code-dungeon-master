@@ -30,7 +30,6 @@ Claude Code 跟地城領主/地下城主（Dungeon Master）有什麼關係！�
 | 12 | [請個守衛站崗：HP 可以改，但改成 80 不行](articles/12/day12.md) | 還沒守衛時，藥水劇情讓 DM 把 HP 上限改成 80；權限只看改哪個檔、不看改成什麼；`PreToolUse` 收到的 JSON，`Edit` 要先組出改完的樣子；`guard.ps1` 檢查 hp 與 max_hp，exit 2 擋下並把理由交給 DM；deny `Edit(./.claude/**)` 保護守衛；`/hooks` 看 PreToolUse 的 exit code 規則 | 權限管路徑、Hook 管內容；exit 2 的理由模型看得到，其他 exit code 只給你看、不會擋；守衛壞掉等於沒有守衛，寫完要實測；守衛只看 Edit 和 Write | 已完成 |
 | 13 | [每顆骰子都有票根：DM 講完話，Hook 對一次帳](articles/13/day13.md) | `!` 展開的骰子 Hook 看不到，紀錄從 `dice.sh` 自己做：每骰一次寫帳本 `.game/rolls.log`、印票根 `[R:編號=結果]`；CLAUDE.md 要求連票根一起貼、最後一行「骰子：」；`Stop` 收到的 `last_assistant_message` 只有最後一段；`audit.ps1` 對帳，用 JSON 輸出 `systemMessage` 只警告不擋；deny `Edit(./.game/**)` 保護帳本；在外面骰一顆讓警告跳出來，DM 說沒看到 | 規則是請求、查帳是確認；`systemMessage` 只給你看，模型不知道；查帳只對數字、不懂劇情，沒骰也沒票根抓不到 | 已完成 |
 | 14 | 待定 | 狀態列：HP、銅幣、位置掛在畫面最下面 | | 撰寫中 |
-| 15–30 | 待定 | 一天加一樣東西：MCP、Subagent…… | | 未開始 |
 
 大綱採滾動式調整，寫到哪裡更新到哪裡。
 
