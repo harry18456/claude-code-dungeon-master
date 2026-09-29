@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "dungeon": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--script",
+        ".claude/mcp/dice.py"
+      ]
+    }
+  }
+}
