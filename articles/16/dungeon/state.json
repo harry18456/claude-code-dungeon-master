@@ -1,0 +1,198 @@
+{
+  "name": "艾玲",
+  "hp": 7,
+  "max_hp": 12,
+  "copper": 77,
+  "location": "cellar",
+  "inventory": [
+    "寫著「吱吱吱吱」的信"
+  ],
+  "flags": {
+    "cellar_quest_accepted": true,
+    "cellar_loot_searched": false,
+    "combat:cellar": true,
+    "down:giant_rat": true
+  },
+  "enemies": {
+    "giant_rat": 0
+  },
+  "equipment": {
+    "weapon": "shortsword",
+    "ranged": null,
+    "head": "cloth_cap",
+    "body": "leather_vest",
+    "hands": null,
+    "feet": "old_boots"
+  },
+  "arrows": 0,
+  "turn": 2,
+  "version": 2,
+  "last_result": {
+    "kind": "attack",
+    "target": "giant_rat",
+    "target_name": "巨鼠",
+    "mode": "melee",
+    "weapon": "短劍",
+    "attack": {
+      "roll_id": "r-62d41a",
+      "purpose": "attack:giant_rat",
+      "sides": 20,
+      "value": 13,
+      "modifier": 4,
+      "total": 17,
+      "ticket": "[R:r-62d41a=13]"
+    },
+    "attack_rolls": [
+      {
+        "roll_id": "r-62d41a",
+        "purpose": "attack:giant_rat",
+        "sides": 20,
+        "value": 13,
+        "modifier": 4,
+        "total": 17,
+        "ticket": "[R:r-62d41a=13]"
+      }
+    ],
+    "attack_mode": "normal",
+    "attack_bonus": 4,
+    "target_ac": 12,
+    "hit": true,
+    "crit": false,
+    "fumble": false,
+    "damage": 8,
+    "damage_rolls": [
+      {
+        "roll_id": "r-cf8bc9",
+        "purpose": "damage:giant_rat",
+        "sides": 6,
+        "value": 6,
+        "modifier": 0,
+        "total": 6,
+        "ticket": "[R:r-cf8bc9=6]"
+      }
+    ],
+    "enemy_hp_before": 2,
+    "enemy_hp_after": 0,
+    "enemy_defeated": true,
+    "effects": [
+      "旗標 down:giant_rat 成立",
+      "巨鼠倒下",
+      "獲得物品：寫著「吱吱吱吱」的信",
+      "另一隻巨鼠出手，落空"
+    ],
+    "revealed": [
+      "第一隻巨鼠不動了。雜物堆底下還有窸窣聲。"
+    ],
+    "strikes": [
+      {
+        "actor": "giant_rat_2",
+        "actor_name": "另一隻巨鼠",
+        "roll": {
+          "roll_id": "r-92ffd3",
+          "purpose": "counter:giant_rat_2",
+          "sides": 20,
+          "value": 6,
+          "modifier": 3,
+          "total": 9,
+          "ticket": "[R:r-92ffd3=6]"
+        },
+        "player_ac": 13,
+        "hit": false,
+        "crit": false
+      }
+    ],
+    "player_hp_after": 7,
+    "copper_after": 77,
+    "location_after": "cellar",
+    "combat": true,
+    "rolls": [
+      {
+        "roll_id": "r-62d41a",
+        "purpose": "attack:giant_rat",
+        "sides": 20,
+        "value": 13,
+        "modifier": 4,
+        "total": 17,
+        "ticket": "[R:r-62d41a=13]"
+      },
+      {
+        "roll_id": "r-cf8bc9",
+        "purpose": "damage:giant_rat",
+        "sides": 6,
+        "value": 6,
+        "modifier": 0,
+        "total": 6,
+        "ticket": "[R:r-cf8bc9=6]"
+      },
+      {
+        "roll_id": "r-92ffd3",
+        "purpose": "counter:giant_rat_2",
+        "sides": 20,
+        "value": 6,
+        "modifier": 3,
+        "total": 9,
+        "ticket": "[R:r-92ffd3=6]"
+      }
+    ],
+    "dice": "攻擊巨鼠 13＋4＝17，對 AC 12，命中，傷害 8 [R:r-62d41a=13] [R:r-cf8bc9=6]\n另一隻巨鼠反擊 6＋3＝9，對你的 AC 13，落空 [R:r-92ffd3=6]",
+    "resolution_id": "x-4858bc05",
+    "version": 2,
+    "at": "2026-09-30T12:33:42+00:00"
+  },
+  "recent_results": [
+    {
+      "resolution_id": "x-11d95d12",
+      "version": 1,
+      "kind": "attack",
+      "rolls": [
+        {
+          "roll_id": "r-e8d4da",
+          "value": 12,
+          "purpose": "attack:giant_rat"
+        },
+        {
+          "roll_id": "r-8d8623",
+          "value": 3,
+          "purpose": "damage:giant_rat"
+        },
+        {
+          "roll_id": "r-3a9830",
+          "value": 19,
+          "purpose": "counter:giant_rat"
+        },
+        {
+          "roll_id": "r-1a258b",
+          "value": 3,
+          "purpose": "counter_damage:giant_rat"
+        },
+        {
+          "roll_id": "r-f31a29",
+          "value": 9,
+          "purpose": "counter:giant_rat_2"
+        }
+      ]
+    },
+    {
+      "resolution_id": "x-4858bc05",
+      "version": 2,
+      "kind": "attack",
+      "rolls": [
+        {
+          "roll_id": "r-62d41a",
+          "value": 13,
+          "purpose": "attack:giant_rat"
+        },
+        {
+          "roll_id": "r-cf8bc9",
+          "value": 6,
+          "purpose": "damage:giant_rat"
+        },
+        {
+          "roll_id": "r-92ffd3",
+          "value": 6,
+          "purpose": "counter:giant_rat_2"
+        }
+      ]
+    }
+  ]
+}
