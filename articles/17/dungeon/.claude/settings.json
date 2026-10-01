@@ -1,0 +1,66 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__dungeon__roll",
+      "mcp__dungeon__get_state",
+      "mcp__dungeon__get_current_scene",
+      "mcp__dungeon__move_to",
+      "mcp__dungeon__resolve_attack",
+      "mcp__dungeon__rest"
+    ],
+    "deny": [
+      "Edit(CLAUDE.md)",
+      "Edit(./.claude/**)",
+      "Edit(./.game/**)",
+      "Edit(./engine/**)",
+      "Edit(./data/**)",
+      "Edit(./scenes/**)",
+      "Edit(./gamectl.py)",
+      "Edit(state.json)",
+      "Read(./scenes/**)"
+    ]
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "uv run --no-project .claude/hooks/sound.py chimes"
+          },
+          {
+            "type": "command",
+            "command": "uv run --no-project .claude/hooks/audit.py --mode warn"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash|PowerShell",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "uv run --no-project .claude/hooks/guard.py"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "mcp__dungeon__roll|mcp__dungeon__resolve_attack|mcp__dungeon__move_to|mcp__dungeon__rest",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "uv run --no-project .claude/hooks/sound.py --result",
+            "async": true
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "uv run --no-project .claude/statusline.py"
+  }
+}
