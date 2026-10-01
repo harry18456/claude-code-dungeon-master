@@ -41,7 +41,7 @@ Day 16 是「叫」Claude Code DM 不要改，今天要讓 DM「根本改不了�
 
 照下面的步驟換上去：
 
-1. 從 repo 的 `articles/17/dungeon/` 複製 `.claude\hooks\guard.py` 到你的 dungeon 資料夾，再刪掉 `.claude\hooks\guard.ps1`。
+1. 從 repo 的 [`articles/17/dungeon/`](https://github.com/harry18456/claude-code-dungeon-master/tree/main/articles/17/dungeon) 複製 `.claude\hooks\guard.py` 到你的 dungeon 資料夾，再刪掉 `.claude\hooks\guard.ps1`。
 2. 這幾個檔案直接用 repo 的版本覆蓋：`.claude\settings.json`、`CLAUDE.md`、`engine\server.py`、`.claude\skills\cheat\SKILL.md`、`.claude\skills\world-lore\SKILL.md`。每個檔案改了什麼，後面會一一說明。
 3. **開一個新對話。** 舊對話的 context，也就是對話裡已經讀進去的內容，還記得 Day 9 的內幕和舊的 CLAUDE.md。檔案改了，DM 腦袋裡的東西不會跟著變。
 4. 在新對話打「繼續上次的冒險。艾玲現在在哪裡？」。DM 會先呼叫 `get_state`，再呼叫 `get_current_scene`，然後照場景描述回答。
