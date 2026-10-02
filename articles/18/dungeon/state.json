@@ -1,0 +1,197 @@
+{
+  "name": "艾玲",
+  "hp": 7,
+  "max_hp": 12,
+  "copper": 75,
+  "location": "tavern",
+  "inventory": [
+    "寫著「吱吱吱吱」的信"
+  ],
+  "flags": {
+    "cellar_quest_accepted": true,
+    "cellar_loot_searched": false,
+    "down:giant_rat": true,
+    "bought_ale": true,
+    "tried:persuade:cloaked": true
+  },
+  "enemies": {
+    "giant_rat": 0
+  },
+  "equipment": {
+    "weapon": "shortsword",
+    "ranged": null,
+    "head": "cloth_cap",
+    "body": "leather_vest",
+    "hands": null,
+    "feet": "old_boots"
+  },
+  "arrows": 0,
+  "turn": 5,
+  "version": 5,
+  "last_result": {
+    "kind": "check",
+    "rule": "persuade",
+    "rule_name": "說服",
+    "target": "cloaked",
+    "target_title": "披斗篷的人",
+    "attitude": "neutral",
+    "dc": 15,
+    "roll": {
+      "roll_id": "r-c28b10",
+      "purpose": "check:persuade:cloaked",
+      "sides": 20,
+      "value": 2,
+      "modifier": 3,
+      "total": 5,
+      "ticket": "[R:r-c28b10=2]"
+    },
+    "check_rolls": [
+      {
+        "roll_id": "r-c28b10",
+        "purpose": "check:persuade:cloaked",
+        "sides": 20,
+        "value": 2,
+        "modifier": 3,
+        "total": 5,
+        "ticket": "[R:r-c28b10=2]"
+      },
+      {
+        "roll_id": "r-814b2e",
+        "purpose": "check:persuade:cloaked",
+        "sides": 20,
+        "value": 2,
+        "modifier": 3,
+        "total": 5,
+        "ticket": "[R:r-814b2e=2]"
+      }
+    ],
+    "mode": "advantage",
+    "bonus": 3,
+    "why": [
+      "bought_ale：優勢"
+    ],
+    "check": "說服",
+    "success": false,
+    "effects": [],
+    "revealed": [],
+    "player_hp_after": 7,
+    "copper_after": 75,
+    "location_after": "tavern",
+    "combat": false,
+    "rolls": [
+      {
+        "roll_id": "r-c28b10",
+        "purpose": "check:persuade:cloaked",
+        "sides": 20,
+        "value": 2,
+        "modifier": 3,
+        "total": 5,
+        "ticket": "[R:r-c28b10=2]"
+      },
+      {
+        "roll_id": "r-814b2e",
+        "purpose": "check:persuade:cloaked",
+        "sides": 20,
+        "value": 2,
+        "modifier": 3,
+        "total": 5,
+        "ticket": "[R:r-814b2e=2]"
+      }
+    ],
+    "dice": "說服披斗篷的人 優勢 2、2 取 2＋3＝5，對 DC 15，失敗 [R:r-c28b10=2] [R:r-814b2e=2]",
+    "resolution_id": "x-abebb50d",
+    "version": 5,
+    "at": "2026-10-02T15:17:11+00:00"
+  },
+  "recent_results": [
+    {
+      "resolution_id": "x-11d95d12",
+      "version": 1,
+      "kind": "attack",
+      "rolls": [
+        {
+          "roll_id": "r-e8d4da",
+          "value": 12,
+          "purpose": "attack:giant_rat"
+        },
+        {
+          "roll_id": "r-8d8623",
+          "value": 3,
+          "purpose": "damage:giant_rat"
+        },
+        {
+          "roll_id": "r-3a9830",
+          "value": 19,
+          "purpose": "counter:giant_rat"
+        },
+        {
+          "roll_id": "r-1a258b",
+          "value": 3,
+          "purpose": "counter_damage:giant_rat"
+        },
+        {
+          "roll_id": "r-f31a29",
+          "value": 9,
+          "purpose": "counter:giant_rat_2"
+        }
+      ]
+    },
+    {
+      "resolution_id": "x-4858bc05",
+      "version": 2,
+      "kind": "attack",
+      "rolls": [
+        {
+          "roll_id": "r-62d41a",
+          "value": 13,
+          "purpose": "attack:giant_rat"
+        },
+        {
+          "roll_id": "r-cf8bc9",
+          "value": 6,
+          "purpose": "damage:giant_rat"
+        },
+        {
+          "roll_id": "r-92ffd3",
+          "value": 6,
+          "purpose": "counter:giant_rat_2"
+        }
+      ]
+    },
+    {
+      "resolution_id": "x-2575edf6",
+      "version": 3,
+      "kind": "move",
+      "rolls": [
+        {
+          "roll_id": "r-80e499",
+          "value": 2,
+          "purpose": "retreat:giant_rat_2"
+        }
+      ]
+    },
+    {
+      "resolution_id": "x-7e61771c",
+      "version": 4,
+      "kind": "check",
+      "rolls": []
+    },
+    {
+      "resolution_id": "x-abebb50d",
+      "version": 5,
+      "kind": "check",
+      "rolls": [
+        {
+          "roll_id": "r-c28b10",
+          "value": 2,
+          "purpose": "check:persuade:cloaked"
+        },
+        {
+          "roll_id": "r-814b2e",
+          "value": 2,
+          "purpose": "check:persuade:cloaked"
+        }
+      ]
+    }
+  ]
+}
