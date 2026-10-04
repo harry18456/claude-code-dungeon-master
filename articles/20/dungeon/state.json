@@ -1,0 +1,187 @@
+{
+  "name": "艾玲",
+  "hp": 7,
+  "max_hp": 12,
+  "copper": 125,
+  "location": "tavern",
+  "inventory": [
+    "寫著「吱吱吱吱」的信",
+    "小小的鼠臉畫像"
+  ],
+  "flags": {
+    "cellar_quest_accepted": true,
+    "cellar_loot_searched": false,
+    "down:giant_rat": true,
+    "bought_ale": true,
+    "down:giant_rat_2": true,
+    "cellar_cleared": true,
+    "reward_claimed": true
+  },
+  "enemies": {
+    "giant_rat": 0,
+    "giant_rat_2": 0
+  },
+  "equipment": {
+    "weapon": "shortsword",
+    "ranged": null,
+    "head": "cloth_cap",
+    "body": "leather_vest",
+    "hands": null,
+    "feet": "old_boots"
+  },
+  "arrows": 0,
+  "turn": 9,
+  "version": 9,
+  "last_result": {
+    "kind": "check",
+    "rule": "interact",
+    "rule_name": "互動",
+    "target": "marlda_reward",
+    "target_title": "向梅拉領地窖委託的報酬",
+    "dc": null,
+    "roll": null,
+    "success": true,
+    "effects": [
+      "銅幣 75 → 125",
+      "旗標 reward_claimed 成立"
+    ],
+    "revealed": [
+      "梅拉數了 50 枚銅幣給你，順口說：守衛是她交代的，二樓住著一個從北邊逃來的女孩。"
+    ],
+    "player_hp_after": 7,
+    "copper_after": 125,
+    "location_after": "tavern",
+    "combat": false,
+    "rolls": [],
+    "dice": "（本回合無擲骰）",
+    "resolution_id": "x-c63ba38f",
+    "version": 9,
+    "at": "2026-10-04T14:58:11+00:00"
+  },
+  "recent_results": [
+    {
+      "resolution_id": "x-11d95d12",
+      "version": 1,
+      "kind": "attack",
+      "rolls": [
+        {
+          "roll_id": "r-e8d4da",
+          "value": 12,
+          "purpose": "attack:giant_rat"
+        },
+        {
+          "roll_id": "r-8d8623",
+          "value": 3,
+          "purpose": "damage:giant_rat"
+        },
+        {
+          "roll_id": "r-3a9830",
+          "value": 19,
+          "purpose": "counter:giant_rat"
+        },
+        {
+          "roll_id": "r-1a258b",
+          "value": 3,
+          "purpose": "counter_damage:giant_rat"
+        },
+        {
+          "roll_id": "r-f31a29",
+          "value": 9,
+          "purpose": "counter:giant_rat_2"
+        }
+      ]
+    },
+    {
+      "resolution_id": "x-4858bc05",
+      "version": 2,
+      "kind": "attack",
+      "rolls": [
+        {
+          "roll_id": "r-62d41a",
+          "value": 13,
+          "purpose": "attack:giant_rat"
+        },
+        {
+          "roll_id": "r-cf8bc9",
+          "value": 6,
+          "purpose": "damage:giant_rat"
+        },
+        {
+          "roll_id": "r-92ffd3",
+          "value": 6,
+          "purpose": "counter:giant_rat_2"
+        }
+      ]
+    },
+    {
+      "resolution_id": "x-2575edf6",
+      "version": 3,
+      "kind": "move",
+      "rolls": [
+        {
+          "roll_id": "r-80e499",
+          "value": 2,
+          "purpose": "retreat:giant_rat_2"
+        }
+      ]
+    },
+    {
+      "resolution_id": "x-7e61771c",
+      "version": 4,
+      "kind": "check",
+      "rolls": []
+    },
+    {
+      "resolution_id": "x-abebb50d",
+      "version": 5,
+      "kind": "check",
+      "rolls": [
+        {
+          "roll_id": "r-c28b10",
+          "value": 2,
+          "purpose": "check:persuade:cloaked"
+        },
+        {
+          "roll_id": "r-814b2e",
+          "value": 2,
+          "purpose": "check:persuade:cloaked"
+        }
+      ]
+    },
+    {
+      "resolution_id": "x-39a02b32",
+      "version": 6,
+      "kind": "move",
+      "rolls": []
+    },
+    {
+      "resolution_id": "x-2f53d7e8",
+      "version": 7,
+      "kind": "attack",
+      "rolls": [
+        {
+          "roll_id": "r-9a3d48",
+          "value": 9,
+          "purpose": "attack:giant_rat_2"
+        },
+        {
+          "roll_id": "r-b89cbe",
+          "value": 6,
+          "purpose": "damage:giant_rat_2"
+        }
+      ]
+    },
+    {
+      "resolution_id": "x-a6486aa5",
+      "version": 8,
+      "kind": "move",
+      "rolls": []
+    },
+    {
+      "resolution_id": "x-c63ba38f",
+      "version": 9,
+      "kind": "check",
+      "rolls": []
+    }
+  ]
+}
