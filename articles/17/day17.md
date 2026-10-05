@@ -115,7 +115,7 @@ MCP server 現在多了兩個工具：
 
 ## deny 管不到 Bash：用 guard.py 補上
 
-deny 管的是 Claude Code 自己的檔案工具，像 `Read`、`Edit` 這些。DM 如果改用 Bash 跑 `cat scenes/cellar.json`，deny 就管不到了。Day 12 最後也提過： Hook 守衛只看 `Edit` 和 `Write`。
+deny 管的是 Claude Code 自己的檔案工具，像 `Read`、`Edit` 這些。DM 如果改用 Bash 跑 `cat scenes/cellar.json`，deny 就管不到了。Day 12 最後也提過：Hook 守衛只看 `Edit` 和 `Write`。
 
 所以今天把 Day 12 的 `guard.ps1` 換成 `.claude\hooks\guard.py`，改成在 DM 執行指令之前檢查：
 

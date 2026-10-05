@@ -66,7 +66,7 @@ claude mcp add --scope user time -- uvx mcp-server-time --local-timezone Asia/Ta
 艾玲推開醉月酒館的門往外看。照現實世界現在的時間，描述外面是白天還是晚上。
 ```
 
-在 Auto 模式下 Claude Code DM 使用 time mcp 直接被分類器直接放行。DM 就這樣拿到台北時間。畫面上只看得到`called time`，按 `Ctrl+O`（Day 4 用過）才看得到細節：`get_current_time` 回傳現在是晚上九點多，DM 就描述「外面是晚上，天色全黑」。DM 還讀了 `state.json`，發現艾玲人在舊地窖，要先爬回酒館才能推門往外看。
+在 Auto 模式下 Claude Code DM 使用 time mcp 直接被分類器放行。DM 就這樣拿到台北時間。畫面上只看得到`called time`，按 `Ctrl+O`（Day 4 用過）才看得到細節：`get_current_time` 回傳現在是晚上九點多，DM 就描述「外面是晚上，天色全黑」。DM 還讀了 `state.json`，發現艾玲人在舊地窖，要先爬回酒館才能推門往外看。
 
 ![按 Ctrl+O 展開：玩家說艾玲推開醉月酒館的門往外看，照現實時間描述天色；DM 呼叫 time - get_current_time (MCP)，參數 timezone 是 Asia/Taipei，回傳 datetime 2026-09-29T21:42:44+08:00、day_of_week Tuesday；接著讀 state.json；最後回覆外面是晚上、天色全黑，艾玲人在舊地窖，要先爬回樓上才能推門，並給三個選項](assets/02-mcp-time-call.png)
 

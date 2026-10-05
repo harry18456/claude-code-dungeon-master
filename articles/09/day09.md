@@ -152,6 +152,8 @@ allowed-tools: Bash(bash dice.sh *)
 
 同一個資料夾、同一個模式、同一支腳本，差別只在 Skill 有沒有自己帶鑰匙（權限）。
 
+測完記得把 `allow` 改回 `["Bash(bash dice.sh *)"]`，再按 `Shift+Tab` 切回 Auto 模式。
+
 這邊有四個重點：
 
 - **權限只管執行 Skill 那一輪。** 你送出下一句話，這個授權就沒了。

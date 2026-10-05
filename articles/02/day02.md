@@ -22,7 +22,7 @@ Claude Code 把一段對話叫做 session。你打 `claude` 等同於開一個�
 C:\Users\<你的名稱>\.claude\projects\<資料夾路徑>\<session-id>.jsonl
 ```
 
-`<資料夾路徑>` 是你啟動 `claude` 的那個資料夾，路徑裡不是英數字的字元全部換成 `-`。以我的為例 `D:\side_project\dungeon` 就變成 `D--side-project-dungeon`。打開來看，每 session 都會對應著一個 `.jsonl` 檔。
+`<資料夾路徑>` 是你啟動 `claude` 的那個資料夾，路徑裡不是英數字的字元全部換成 `-`。以我的為例 `D:\side_project\dungeon` 就變成 `D--side-project-dungeon`。打開來看，每個 session 都會對應著一個 `.jsonl` 檔。
 
 ![檔案總管開在 C:\Users\harry\.claude\projects\D--side-project-dungeon](assets/02-projects-folder.png)
 

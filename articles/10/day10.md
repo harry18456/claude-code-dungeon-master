@@ -12,7 +12,7 @@
 | 2 | `--resume`、`-c` | 昨天的梅拉找得回來 | Claude Code 把對話存在本地機器上，隨時能接回上一次的進度 |
 | 3 | `CLAUDE.md` | 世界設定不用每局重講 | 把不變的前提寫成檔案，Claude Code 每次開新對話自動載入 |
 | 4 | `state.json`、內建工具 | 血量和錢記在檔案裡 | 會變的資料存成檔案，由 Claude Code 讀寫，不靠 Claude Code 記在對話裡 |
-| 5 | checkpoint、`/rewind` | 後悔藥，回到上一步 | Claude Code 改壞了能倒回去，對話和檔案還可以分開還原 |ㄋ
+| 5 | checkpoint、`/rewind` | 後悔藥，回到上一步 | Claude Code 改壞了能倒回去，對話和檔案還可以分開還原 |
 | 6 | Skill、`/rest` | 休息補血變成一個指令 | 把偶爾才用的流程獨立成檔，Claude Code 用到才載入到對話 |
 | 7 | 權限模式、allow／deny | DM 改不動規則書 | 可以讓 Claude Code 有些事「做不到」，不再只是 prompt 裡的請求 |
 | 8 | `$ARGUMENTS`、`!` 展開 | 骰子一定會骰，不會被瞎掰 | Skill 可以帶參數；指令由 Claude Code 在內容進對話之前就跑完 |
@@ -34,7 +34,7 @@ dungeon\
         └── world-lore\  只有 Claude Code 能叫
 ```
 
-九個檔案，還不算亂，但再加下去就會了。趁現在整理，順便看看 Claude Code 怎麼看這個資料夾吧。
+八個檔案，還不算亂，但再加下去就會了。趁現在整理，順便看看 Claude Code 怎麼看這個資料夾吧。
 
 ## Plan Mode：先講再做
 
