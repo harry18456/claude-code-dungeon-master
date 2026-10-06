@@ -47,9 +47,9 @@ Day 21 最後說，Claude Code DM 越來越像會計。偷紙失手的那一次�
 
 Claude Code 每次把你的訊息送給模型，都會附上一段系統提示（system prompt），告訴模型「你是誰、要怎麼做事」。預設的系統提示是寫給寫程式用的：怎麼改程式、怎麼寫註解、怎麼確認改對了。
 
-output style 換的就是這一段。選了自己寫的 output style，Claude Code 會拿掉寫程式的那些指示，改放你寫的內容。DM 不寫程式，拿掉剛好。
+output style 換的就是這一段。選了自己寫的 output style，Claude Code 會拿掉預設寫程式的那些指示，改放你選擇的 style。
 
-內建的除了 default，還有 Proactive、Concise、Explanatory、Learning 四種。它們都是寫程式用的，只是在原本的指示上多加一段，例如 Concise 讓回覆更短。今天自己寫一個 `dm-voice`。在 dungeon 的 `.claude\` 底下建一個 `output-styles` 資料夾，新增 `dm-voice.md`：
+內建的除了 default，還有 Proactive、Concise、Explanatory、Learning 四種。它們都是寫程式用的，只是在原本的指示上多加一段，例如 Concise 會讓回覆更短。今天來寫一個 `dm-voice` style，在 dungeon 的 `.claude\` 底下建一個 `output-styles` 資料夾，新增 `dm-voice.md`：
 
 ```markdown
 ---
@@ -84,7 +84,7 @@ description: 地城領主敘事腔：第二人稱、感官細節；機械數字�
 
 清單裡還有一個 `adhd-ste100-eli5:ADHD STE100 ELI5`，是我之前自己做的 output style：[cc-adhd-ste100-eli5](https://github.com/harry18456/cc-adhd-ste100-eli5)，讓 Claude Code 的回答更好讀、也更好照著做：答案放第一行、一句只講一件事、少用要停下來想的詞。它是裝 plugin 帶進來的，所以名字前面多了 `adhd-ste100-eli5:`，Day 24 講 plugin 時會再看到這種寫法。有興趣也可以使用看看。
 
-我們要選剛剛加入的 `dm-voice`，嘗試設定在 `.claude\settings.json`。在檔案最後加一行 `outputStyle`，跟 `permissions`、`hooks` 放在同一層。前一個設定的 `}` 後面記得補一個逗號：
+我們要選剛剛加入的 `dm-voice`，在 `.claude\settings.json` 最後加一行 `outputStyle`，跟 `permissions`、`hooks` 放在同一層。前一個設定的 `}` 後面記得補一個逗號：
 
 ```json
   "statusLine": {
