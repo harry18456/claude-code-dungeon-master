@@ -1,0 +1,17 @@
+{
+  "name": "dm",
+  "displayName": "Dungeon Master",
+  "version": "1.0.0",
+  "description": "地城領主：說話方式 dm-voice、規則裁判、存讀檔、前情提要、查帳、守衛、日誌和音效，加上 dungeon 引擎、MCP server、場景和規則書。CLAUDE.md、權限和存檔放在你的冒險資料夾。",
+  "author": {
+    "name": "harry18456",
+    "url": "https://github.com/harry18456"
+  },
+  "homepage": "https://github.com/harry18456/claude-code-dungeon-master",
+  "repository": "https://github.com/harry18456/claude-code-dungeon-master",
+  "keywords": [
+    "trpg",
+    "dungeon-master",
+    "game"
+  ]
+}

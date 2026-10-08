@@ -1,0 +1,15 @@
+{
+  "name": "dungeon-master",
+  "description": "iThome 鐵人賽「30 天建立 Claude Code 地城領主」用到的 plugin",
+  "owner": {
+    "name": "harry18456",
+    "url": "https://github.com/harry18456"
+  },
+  "plugins": [
+    {
+      "name": "dm",
+      "source": "./plugins/dm",
+      "description": "地城領主：說話方式 dm-voice、規則裁判、存讀檔、前情提要、查帳、守衛、日誌和音效，加上 dungeon 引擎、MCP server、場景和規則書。CLAUDE.md、權限和存檔放在你的冒險資料夾。"
+    }
+  ]
+}

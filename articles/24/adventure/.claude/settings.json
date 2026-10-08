@@ -1,0 +1,39 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__plugin_dm_dungeon__get_state",
+      "mcp__plugin_dm_dungeon__get_current_scene",
+      "mcp__plugin_dm_dungeon__move_to",
+      "mcp__plugin_dm_dungeon__resolve_attack",
+      "mcp__plugin_dm_dungeon__resolve_check",
+      "mcp__plugin_dm_dungeon__rest"
+    ],
+    "deny": [
+      "Edit(CLAUDE.md)",
+      "Edit(./.claude/**)",
+      "Edit(./.game/**)",
+      "Edit(state.json)",
+      "Edit(~/.claude/plugins/**)",
+      "Read(~/.claude/plugins/**/scenes/**)"
+    ]
+  },
+  "env": {
+    "CLAUDE_CODE_DISABLE_BACKGROUND_TASKS": "1"
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "uv run --no-project .claude/statusline.py"
+  },
+  "outputStyle": "dm:dm-voice",
+  "extraKnownMarketplaces": {
+    "dungeon-master": {
+      "source": {
+        "source": "github",
+        "repo": "harry18456/claude-code-dungeon-master"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "dm@dungeon-master": true
+  }
+}

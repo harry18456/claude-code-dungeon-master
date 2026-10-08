@@ -1,0 +1,21 @@
+{
+  "name": "艾玲",
+  "hp": 12,
+  "max_hp": 12,
+  "copper": 8,
+  "location": "tavern",
+  "inventory": [],
+  "equipment": {
+    "weapon": "shortsword",
+    "ranged": null,
+    "head": "cloth_cap",
+    "body": "leather_vest",
+    "hands": null,
+    "feet": "old_boots"
+  },
+  "arrows": 0,
+  "flags": {},
+  "enemies": {},
+  "turn": 0,
+  "version": 0
+}
