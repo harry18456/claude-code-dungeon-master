@@ -1,0 +1,329 @@
+{
+  "name": "艾玲",
+  "hp": 7,
+  "max_hp": 12,
+  "copper": 123,
+  "location": "upstairs",
+  "inventory": [
+    "寫著「吱吱吱吱」的信",
+    "小小的鼠臉畫像",
+    "披斗篷的人的紙條",
+    "皮手套"
+  ],
+  "flags": {
+    "cellar_quest_accepted": true,
+    "cellar_loot_searched": false,
+    "down:giant_rat": true,
+    "bought_ale": true,
+    "down:giant_rat_2": true,
+    "cellar_cleared": true,
+    "reward_claimed": true,
+    "stole:cloaked": true,
+    "knows_road": true,
+    "bribed:guard": true,
+    "convinced:girl": true,
+    "girl_trusts": true
+  },
+  "enemies": {
+    "giant_rat": 0,
+    "giant_rat_2": 0
+  },
+  "equipment": {
+    "weapon": "shortsword",
+    "ranged": null,
+    "head": "cloth_cap",
+    "body": "leather_vest",
+    "hands": null,
+    "feet": "old_boots"
+  },
+  "arrows": 0,
+  "turn": 13,
+  "version": 37,
+  "last_result": {
+    "kind": "check",
+    "rule": "persuade",
+    "rule_name": "說服",
+    "target": "girl",
+    "target_title": "女孩",
+    "attitude": "wary",
+    "dc": 15,
+    "roll": {
+      "roll_id": "r-61130f",
+      "purpose": "check:persuade:girl",
+      "sides": 20,
+      "value": 16,
+      "modifier": 3,
+      "total": 19,
+      "ticket": "[R:r-61130f=16]"
+    },
+    "check_rolls": [
+      {
+        "roll_id": "r-61130f",
+        "purpose": "check:persuade:girl",
+        "sides": 20,
+        "value": 16,
+        "modifier": 3,
+        "total": 19,
+        "ticket": "[R:r-61130f=16]"
+      }
+    ],
+    "mode": "normal",
+    "bonus": 3,
+    "why": [
+      "籌碼 reward_claimed：DC 降一檔"
+    ],
+    "check": "說服",
+    "success": true,
+    "effects": [
+      "旗標 convinced:girl 成立",
+      "旗標 girl_trusts 成立"
+    ],
+    "revealed": [
+      "女孩小聲說：她是跟著爸爸的商隊走北邊舊路來的，爸爸是車夫。那晚一群人攔下商隊，領頭的叫白狼，他沒有殺人，只把貨箱搬走了。她趁亂躲進林子跑回鎮上，跟爸爸走散了，不知道他現在在哪。她不知道鎮上誰跟那些人是一夥的，所以誰都不敢信。逃的時候她在貨堆旁撿到一封那個領頭的人掉的信。她不識字，只知道這是唯一能查出那些人是誰的東西，一直壓在枕頭下，不敢給任何人看。現在她想請你念給她聽。"
+    ],
+    "player_hp_after": 7,
+    "copper_after": 123,
+    "location_after": "upstairs",
+    "combat": false,
+    "rolls": [
+      {
+        "roll_id": "r-61130f",
+        "purpose": "check:persuade:girl",
+        "sides": 20,
+        "value": 16,
+        "modifier": 3,
+        "total": 19,
+        "ticket": "[R:r-61130f=16]"
+      }
+    ],
+    "dice": "說服女孩 16＋3＝19，對 DC 15，成功 [R:r-61130f=16]",
+    "resolution_id": "x-2e630d02",
+    "version": 37,
+    "at": "2026-10-06T12:36:14+00:00"
+  },
+  "recent_results": [
+    {
+      "resolution_id": "x-11d95d12",
+      "version": 1,
+      "kind": "attack",
+      "rolls": [
+        {
+          "roll_id": "r-e8d4da",
+          "value": 12,
+          "purpose": "attack:giant_rat"
+        },
+        {
+          "roll_id": "r-8d8623",
+          "value": 3,
+          "purpose": "damage:giant_rat"
+        },
+        {
+          "roll_id": "r-3a9830",
+          "value": 19,
+          "purpose": "counter:giant_rat"
+        },
+        {
+          "roll_id": "r-1a258b",
+          "value": 3,
+          "purpose": "counter_damage:giant_rat"
+        },
+        {
+          "roll_id": "r-f31a29",
+          "value": 9,
+          "purpose": "counter:giant_rat_2"
+        }
+      ]
+    },
+    {
+      "resolution_id": "x-4858bc05",
+      "version": 2,
+      "kind": "attack",
+      "rolls": [
+        {
+          "roll_id": "r-62d41a",
+          "value": 13,
+          "purpose": "attack:giant_rat"
+        },
+        {
+          "roll_id": "r-cf8bc9",
+          "value": 6,
+          "purpose": "damage:giant_rat"
+        },
+        {
+          "roll_id": "r-92ffd3",
+          "value": 6,
+          "purpose": "counter:giant_rat_2"
+        }
+      ]
+    },
+    {
+      "resolution_id": "x-2575edf6",
+      "version": 3,
+      "kind": "move",
+      "rolls": [
+        {
+          "roll_id": "r-80e499",
+          "value": 2,
+          "purpose": "retreat:giant_rat_2"
+        }
+      ]
+    },
+    {
+      "resolution_id": "x-7e61771c",
+      "version": 4,
+      "kind": "check",
+      "rolls": []
+    },
+    {
+      "resolution_id": "x-abebb50d",
+      "version": 5,
+      "kind": "check",
+      "rolls": [
+        {
+          "roll_id": "r-c28b10",
+          "value": 2,
+          "purpose": "check:persuade:cloaked"
+        },
+        {
+          "roll_id": "r-814b2e",
+          "value": 2,
+          "purpose": "check:persuade:cloaked"
+        }
+      ]
+    },
+    {
+      "resolution_id": "x-39a02b32",
+      "version": 6,
+      "kind": "move",
+      "rolls": []
+    },
+    {
+      "resolution_id": "x-2f53d7e8",
+      "version": 7,
+      "kind": "attack",
+      "rolls": [
+        {
+          "roll_id": "r-9a3d48",
+          "value": 9,
+          "purpose": "attack:giant_rat_2"
+        },
+        {
+          "roll_id": "r-b89cbe",
+          "value": 6,
+          "purpose": "damage:giant_rat_2"
+        }
+      ]
+    },
+    {
+      "resolution_id": "x-a6486aa5",
+      "version": 8,
+      "kind": "move",
+      "rolls": []
+    },
+    {
+      "resolution_id": "x-c63ba38f",
+      "version": 9,
+      "kind": "check",
+      "rolls": []
+    },
+    {
+      "resolution_id": "x-5a250cc2",
+      "version": 10,
+      "kind": "save",
+      "rolls": []
+    },
+    {
+      "resolution_id": "x-9181c778",
+      "version": 21,
+      "kind": "check",
+      "rolls": [
+        {
+          "roll_id": "r-22662e",
+          "value": 6,
+          "purpose": "check:steal:cloaked"
+        },
+        {
+          "roll_id": "r-4a39e7",
+          "value": 4,
+          "purpose": "check:steal:cloaked"
+        }
+      ]
+    },
+    {
+      "resolution_id": "x-0a28d968",
+      "version": 22,
+      "kind": "load",
+      "rolls": []
+    },
+    {
+      "resolution_id": "x-b20cd550",
+      "version": 23,
+      "kind": "check",
+      "rolls": [
+        {
+          "roll_id": "r-d7f9d1",
+          "value": 3,
+          "purpose": "check:steal:cloaked"
+        },
+        {
+          "roll_id": "r-32d05b",
+          "value": 20,
+          "purpose": "check:steal:cloaked"
+        },
+        {
+          "roll_id": "r-4fed14",
+          "value": 3,
+          "purpose": "steal:cloaked:copper"
+        }
+      ]
+    },
+    {
+      "resolution_id": "x-94cfdc18",
+      "version": 24,
+      "kind": "check",
+      "rolls": []
+    },
+    {
+      "resolution_id": "x-1cbbb6f5",
+      "version": 25,
+      "kind": "move",
+      "rolls": []
+    },
+    {
+      "resolution_id": "x-8d09a32c",
+      "version": 26,
+      "kind": "save",
+      "rolls": []
+    },
+    {
+      "resolution_id": "x-cb390a7b",
+      "version": 27,
+      "kind": "check",
+      "rolls": [
+        {
+          "roll_id": "r-8f60c0",
+          "value": 14,
+          "purpose": "check:persuade:girl"
+        }
+      ]
+    },
+    {
+      "resolution_id": "x-6fdab608",
+      "version": 28,
+      "kind": "load",
+      "rolls": []
+    },
+    {
+      "resolution_id": "x-2e630d02",
+      "version": 37,
+      "kind": "check",
+      "rolls": [
+        {
+          "roll_id": "r-61130f",
+          "value": 16,
+          "purpose": "check:persuade:girl"
+        }
+      ]
+    }
+  ]
+}
