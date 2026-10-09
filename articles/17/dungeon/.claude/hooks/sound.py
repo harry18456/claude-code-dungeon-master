@@ -10,7 +10,6 @@ dice lines: every swing (yours or an enemy's) is dice then hit / miss.
   check  -> dice when the check itself rolled (buying an ale does not),
             door when the world moved the player, then each strike
   rest   -> rest (the campfire), then dice when a die was rolled
-  player_down -> down at the end
 
 Windows plays with winsound; macOS/Linux use afplay, paplay or aplay when
 present; otherwise silence. Never blocks longer than the clip plus the
@@ -129,8 +128,6 @@ def sounds_for(result):
         if any(str(e).startswith("被帶到") for e in result.get("effects", [])):
             out.append("door")
         out += swings(strikes)
-    if result.get("player_down"):
-        out.append("down")
     return out
 
 

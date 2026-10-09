@@ -1,7 +1,7 @@
 """story.py — keep the table talk: what the player said and what the DM answered.
 
 The engine records what happened (events, dice). This hook records how it was
-told, so /report can show an adventure and not only a ledger. It reads only
+told, so the log keeps the adventure and not only a ledger. It reads only
 fields Claude Code hands to hooks, never the transcript file, which is written
 asynchronously and may lag behind at Stop time:
 

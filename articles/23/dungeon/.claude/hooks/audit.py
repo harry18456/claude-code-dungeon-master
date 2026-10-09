@@ -6,7 +6,7 @@ Three mechanical checks, nothing else (plan C6):
   3. a roll committed this turn has no ticket in the reply
 
 It does not try to understand prose. A narrated number with no ticket and
-no new roll this turn is a known miss, stated in Day 13 and Day 29.
+no new roll this turn is a known miss, stated in Day 13.
 
 Modes: --mode warn (default) shows a systemMessage to the player;
        --mode block asks the DM to correct, at most 2 times per turn.
@@ -122,13 +122,6 @@ def main():
         sys.exit(0)
 
     summary = "查帳：" + "；".join(problems)
-    try:  # the buzzer: the DM got caught
-        import subprocess
-        # stdout of this hook must stay pure JSON, so the buzzer's output is dropped
-        subprocess.run([sys.executable, str(pathlib.Path(__file__).with_name("sound.py")), "buzz"],
-                       stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=10, check=False)
-    except Exception:
-        pass
     if mode == "block" and blocks < MAX_BLOCKS and not (payload.get("stop_hook_active") and blocks >= MAX_BLOCKS):
         save_cursor(seen_version, blocks + 1)
         print(json.dumps({

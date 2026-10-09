@@ -3,7 +3,7 @@
 Every command goes through engine/core.py, so it shares the same commit
 path as the MCP server. No model involvement.
 
-Usage: uv run --no-project gamectl.py <status|rest|save|load|log|report|newgame|cheat> [args]
+Usage: uv run --no-project gamectl.py <status|rest|save|load|log|newgame|cheat> [args]
 """
 import json
 import pathlib
@@ -34,21 +34,6 @@ def cmd_status():
           f"第 {st.get('turn', 0)} 回合 | 武器：{hero['melee']['weapon']} {hero['melee']['damage']}"
           + (f"，{hero['ranged']['weapon']}（箭 {hero['arrows']}）" if hero.get("ranged") else "")
           + f" | 裝備：{gear} | 背包：{'、'.join(st.get('inventory', [])) or '空'} | 目標：{core.objective(st)}")
-
-
-def cmd_equip(*args):
-    name = " ".join(a for a in args if a.strip())
-    if not name:
-        raise core.EngineError("要裝備什麼？例如：equip 彎刀")
-    res = core.op_equip(core.load_state(), name)
-    hero = res["hero"]
-    line = f"已裝備 {res['item']}（{res['slot']}）"
-    if res.get("previous"):
-        line += f"，{res['previous']}收進背包"
-    line += f"。AC {hero['ac']}，近戰 {hero['melee']['weapon']} {hero['melee']['damage']}"
-    if hero.get("ranged"):
-        line += f"，遠程 {hero['ranged']['weapon']} {hero['ranged'].get('damage', '')}（箭 {hero['arrows']}）"
-    print(line)
 
 
 def cue(name):
@@ -133,31 +118,6 @@ def cmd_log(n="10"):
         print(f"[{kind}] {extra}{down}")
 
 
-def cmd_report():
-    st = core.load_state()
-    rolls = []
-    if core.ROLLS.exists():
-        rolls = [json.loads(l) for l in core.ROLLS.read_text(encoding="utf-8").splitlines() if l.strip()]
-    events = []
-    if core.EVENTS.exists():
-        events = [json.loads(l) for l in core.EVENTS.read_text(encoding="utf-8").splitlines() if l.strip()]
-    attacks = [e for e in events if e.get("kind") == "attack"]
-    checks = [e for e in events if e.get("kind") == "check"]
-    print(json.dumps({
-        "state": {k: st.get(k) for k in core.GAME_FIELDS},
-        "version": st.get("version"),
-        "rolls": rolls,
-        "events": events,
-        "totals": {
-            "rolls": len(rolls), "attacks": len(attacks),
-            "hits": sum(1 for e in attacks if e.get("hit")),
-            "checks": len(checks), "check_successes": sum(1 for e in checks if e.get("success")),
-            "downs": int(st.get("flags", {}).get("downed", 0)),
-            "ending": next((k for k in ("ending_truth", "ending_peace", "ending_fight") if st.get("flags", {}).get(k)), None),
-        },
-    }, ensure_ascii=False, indent=2))
-
-
 def cmd_newgame():
     res = core.op_newgame()
     print(f"新遊戲開始。（結算編號 {res['resolution_id']}）")
@@ -171,8 +131,7 @@ def cmd_cheat():
 
 if __name__ == "__main__":
     cmds = {"status": cmd_status, "rest": cmd_rest, "save": cmd_save, "load": cmd_load,
-            "log": cmd_log, "report": cmd_report, "newgame": cmd_newgame, "cheat": cmd_cheat,
-            "equip": cmd_equip}
+            "log": cmd_log, "newgame": cmd_newgame, "cheat": cmd_cheat}
     if len(sys.argv) < 2 or sys.argv[1] not in cmds:
         print(__doc__)
         sys.exit(1)

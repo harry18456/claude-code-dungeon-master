@@ -15,21 +15,6 @@
     "output_sha256": "08801b38bbf6e264c31269953b0f3f478df5bfe128aa876a3cabd3465ca58c10"
   },
   {
-    "file": "stop.wav",
-    "original": "430800__justvic__complete_sound.wav",
-    "source": "https://freesound.org/people/JustVic/sounds/430800/",
-    "author": "JustVic",
-    "license": "CC0 1.0",
-    "source_start_seconds": 0,
-    "source_span_seconds": 0.7,
-    "tempo": 1,
-    "duration_seconds": 0.7,
-    "gain_db": -7.78,
-    "peak_dbfs": -10.88,
-    "original_sha256": "329d573a092787cb22349a51d6f24bc12e8c7d4f2a6d74f29ef5761492ea6a9c",
-    "output_sha256": "f2ae285aabfa79572be6681dd34489462d8023c28fd6db19c5f38c0e499086fc"
-  },
-  {
     "file": "hit.wav",
     "original": "547040__cogfirestudios__hit-swing-sword-small-2.wav",
     "source": "https://freesound.org/people/CogFireStudios/sounds/547040/",
@@ -60,21 +45,6 @@
     "output_sha256": "3dbe243edf74f5288f4592125c3ecf9dd109ab6e74804f964ac79721044921ad"
   },
   {
-    "file": "down.wav",
-    "original": "128103__project_trident__wooden-floor-body-slams.wav",
-    "source": "https://freesound.org/people/Project_Trident/sounds/128103/",
-    "author": "Project_Trident",
-    "license": "CC0 1.0",
-    "source_start_seconds": 9.92,
-    "source_span_seconds": 1,
-    "tempo": 1,
-    "duration_seconds": 1.0,
-    "gain_db": -6.12,
-    "peak_dbfs": -3.61,
-    "original_sha256": "d20de1bb2f959c514d8f522664a7802a135b16ac77a959a592500e2035b985f6",
-    "output_sha256": "56b63a4bdc4ae0ce66ae5df3b0b89cbae7f62a132a4b7272999da4633f8a83d0"
-  },
-  {
     "file": "door.wav",
     "original": "404929__squidge316__wooden-door-open-and-close.wav",
     "source": "https://freesound.org/people/squidge316/sounds/404929/",
@@ -103,50 +73,5 @@
     "peak_dbfs": -3.43,
     "original_sha256": "73a30a55976fe7ec2ac5bf9f12fdeeb7989b1d87dc83e5bcdcc01b698c7f1d92",
     "output_sha256": "76cf1004bf0d614ecf8812ce8abbb74042ab15493e06bb38c4cc216f67573d9c"
-  },
-  {
-    "file": "buzz.wav",
-    "original": "259290__philip_daniels__buzzer.wav",
-    "source": "https://freesound.org/people/Philip_Daniels/sounds/259290/",
-    "author": "Philip_Daniels",
-    "license": "CC0 1.0",
-    "source_start_seconds": 0.04,
-    "source_span_seconds": 0.5,
-    "tempo": 1,
-    "duration_seconds": 0.5,
-    "gain_db": -11.78,
-    "peak_dbfs": -13.15,
-    "original_sha256": "282fd3f4df3164361bfbd4466d7689249c1558744d115db769edbb2cf0d1ef84",
-    "output_sha256": "fa01cdb9208d0b312c815e8279f29941d920060f21db4fff74df421003e0fd92"
-  },
-  {
-    "file": "open.wav",
-    "original": "381305__devern__door-open.wav",
-    "source": "https://freesound.org/people/DeVern/sounds/381305/",
-    "author": "DeVern",
-    "license": "CC0 1.0",
-    "source_start_seconds": 0,
-    "source_span_seconds": 1.5,
-    "tempo": 1.5,
-    "duration_seconds": 1.0,
-    "gain_db": -6.85,
-    "peak_dbfs": -6.03,
-    "original_sha256": "4d0aec81c815e5c394729bdfcc77e9d2bd3dcce2a7f2cef9798db78172a7b556",
-    "output_sha256": "a5bdc122ca7d76047df4bc5a8d6bfff7153ec2c41b6f44e0a4f391d717f7c21f"
-  },
-  {
-    "file": "close.wav",
-    "original": "444409__mootmcnoodles__wood-door-slam.wav",
-    "source": "https://freesound.org/people/MootMcnoodles/sounds/444409/",
-    "author": "MootMcnoodles",
-    "license": "CC0 1.0",
-    "source_start_seconds": 0,
-    "source_span_seconds": 0.933333,
-    "tempo": 1,
-    "duration_seconds": 1.0,
-    "gain_db": -11.41,
-    "peak_dbfs": -8.39,
-    "original_sha256": "d1660db1c23dbb7adcb2c4d7d430de5c7ecf75afcfa0574486da4b99773d8f8f",
-    "output_sha256": "d6ba276311fc81d65a11f6425456579270814d0cf7e05a5b7f52ab585b19c982"
   }
 ]
