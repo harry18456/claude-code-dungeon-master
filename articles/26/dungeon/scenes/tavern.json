@@ -1,0 +1,66 @@
+{
+  "visible": {
+    "title": "醉月酒館",
+    "description": "很暗，只有壁爐的火光。吧台後是老闆娘梅拉，正擦著杯子。角落桌坐著一個披斗篷的人，桌上攤著一張紙。通往二樓的樓梯口站著一個守衛。牆邊堆著幾個酒桶。",
+    "actors": ["marlda", "cloaked", "guard"],
+    "exits": {
+      "cellar": {"title": "酒館後面通往舊地窖的木門"},
+      "upstairs": {"title": "通往二樓的樓梯", "guarded_by": "guard", "locked_hint": "守衛擋在樓梯口，不讓你上去"},
+      "old_road": {"title": "出鎮往北邊舊路", "requires": ["knows_road"], "locked_hint": "你還不知道商隊走的是哪條路"}
+    },
+    "map": {"cellar": "west", "upstairs": "east", "old_road": "north"},
+    "features": {
+      "marlda_ale": {"title": "跟梅拉買一杯麥酒（2 銅幣）", "rules": ["interact"]},
+      "marlda_quest": {"title": "接下梅拉的地窖委託", "rules": ["interact"]},
+      "marlda_reward": {"title": "向梅拉領地窖委託的報酬", "rules": ["interact"], "hint": "地窖的怪聲解決之後才領得到"},
+      "guard_bribe": {"title": "塞 5 銅幣給守衛", "rules": ["interact"], "hint": "不用說服，他收錢就讓路"},
+      "marlda_boots": {"title": "跟梅拉買一雙軟底靴（5 銅幣）", "rules": ["interact"], "hint": "潛行有優勢"},
+      "barrels": {"title": "牆邊的酒桶", "rules": ["search"], "hint": "推倒它會很吵，用來引開守衛的話對守衛用聲東擊西"}
+    }
+  },
+  "judge_only": {
+    "features": {
+      "marlda_ale": {
+        "interact": {"requires_copper": 2, "forbids": ["hostile:marlda"], "forbids_hint": "梅拉不想理你",
+                     "success": [{"copper": "-2"}, {"set_flag": "bought_ale"}]}
+      },
+      "marlda_quest": {
+        "interact": {"once": "cellar_quest_accepted", "once_hint": "你已經接下這個委託了",
+                     "forbids": ["hostile:marlda"], "forbids_hint": "梅拉不想理你",
+                     "success": [{"set_flag": "cellar_quest_accepted"}]}
+      },
+      "marlda_reward": {
+        "interact": {"requires": ["cellar_quest_accepted", "cellar_cleared"], "requires_hint": "梅拉說：地窖的怪聲還沒解決，先別急著要錢",
+                     "forbids": ["hostile:marlda"], "forbids_hint": "梅拉冷冷看著你：你對我的人動手，還想拿錢？",
+                     "once": "reward_claimed", "once_hint": "報酬已經領過了",
+                     "success": [{"copper": "+50"}, {"set_flag": "reward_claimed"}]}
+      },
+      "guard_bribe": {
+        "interact": {"requires_copper": 5, "forbids": ["down:guard", "convinced:guard", "passed:guard", "bribed:guard"],
+                     "forbids_hint": "守衛已經不擋你了", "success": [{"copper": "-5"}, {"set_flag": "bribed:guard"}]}
+      },
+      "marlda_boots": {
+        "interact": {"requires_copper": 5, "forbids": ["hostile:marlda"], "forbids_hint": "梅拉不想理你",
+                     "once": "bought_boots", "once_hint": "你已經買過了", "success": [{"copper": "-5"}, {"item": "軟底靴"}, {"set_flag": "bought_boots"}]}
+      },
+      "barrels": {
+        "search": {"dc": 12, "once": "searched_barrels", "once_hint": "酒桶後面翻過了",
+                   "success": [{"copper": "+d4"}, {"set_flag": "searched_barrels"}], "fail": []}
+      }
+    },
+    "clues": [
+      {"flag": "cloaked_talked", "journal": true, "text": "披斗篷的人壓低聲音：商隊是在北邊舊路被攔下的，領頭的叫白狼。他找白狼不是為了賞金，是替人帶一句話；託他的人是誰，他不肯說。岔路口有人守著，他過不去。"},
+      {"flag": "stole:cloaked", "journal": true, "text": "紙條上畫著北邊舊路的路線，一個岔路口打了叉。披斗篷的人還沒發現紙不見了。"},
+      {"flag": "alert:cloaked", "text": "披斗篷的人把紙收進懷裡，眼神從兜帽底下盯著你。"},
+      {"flag": "alert:guard", "text": "守衛盯著你不放。他現在更難說話了。"},
+      {"flag": "convinced:guard", "text": "守衛嘆了口氣，往旁邊挪一步，樓梯空出來了。"},
+      {"flag": "passed:guard", "text": "你趁守衛沒注意溜到了樓梯口，二樓可以上去。"},
+      {"flag": "bribed:guard", "text": "守衛把銅幣塞進靴子，往旁邊挪了一步，眼睛看著別處。"},
+      {"flag": "down:guard", "text": "守衛倒在樓梯口不動了。梅拉手裡的杯子停住，眼神冷下來。"},
+      {"flag": "stole:guard", "text": "守衛的錢袋輕了一點，他還沒發現。"},
+      {"flag": "provoked_marlda", "text": "守衛從背後架住你，梅拉冷冷地說：「去地窖冷靜一下。」木門在你身後關上。"},
+      {"flag": "hostile:marlda", "text": "梅拉不再看你。這間酒館的委託和報酬，跟你沒關係了。"},
+      {"flag": "reward_claimed", "journal": true, "text": "梅拉數了 50 枚銅幣給你，順口說：守衛是她交代的，二樓住著一個從北邊逃來的女孩。"}
+    ]
+  }
+}

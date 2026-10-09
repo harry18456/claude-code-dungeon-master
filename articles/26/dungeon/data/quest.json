@@ -1,0 +1,8 @@
+[
+  {"all": ["knows_road"], "any": ["passed:bandit", "convinced:bandit", "down:bandit", "bribed:bandit"], "text": "面對白狼：談，或打"},
+  {"all": ["knows_road"], "text": "走北邊舊路，找商隊的下落"},
+  {"all": ["reward_claimed"], "text": "打聽商隊走的路：二樓的女孩，或角落披斗篷的人"},
+  {"all": ["cellar_quest_accepted", "cellar_cleared"], "text": "回酒館向梅拉領 50 銅幣"},
+  {"all": ["cellar_quest_accepted"], "text": "清掉地窖的怪聲"},
+  {"all": [], "text": "跟梅拉打聽地窖的怪聲"}
+]

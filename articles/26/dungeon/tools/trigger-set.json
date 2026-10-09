@@ -1,0 +1,16 @@
+[
+  {"skill": "rest",  "should": true,  "query": "好累，我想找個角落坐下來喘口氣，包紮一下。"},
+  {"skill": "rest",  "should": true,  "query": "先在酒館過一夜，明天再說。"},
+  {"skill": "rest",  "should": true,  "query": "血快沒了，有沒有辦法回一點血？"},
+  {"skill": "rest",  "should": true,  "query": "我靠著牆閉眼休息一會。"},
+  {"skill": "rest",  "should": false, "query": "我讓巨鼠休息一下，不攻擊牠，看牠會不會走開。"},
+  {"skill": "rest",  "should": false, "query": "問梅拉這間酒館有沒有房間可以租。"},
+  {"skill": "rest",  "should": false, "query": "我坐到角落那桌，跟披斗篷的人說話。"},
+  {"skill": "recap", "should": true,  "query": "等等，剛才到底發生了什麼事？我有點混亂，幫我整理一下。"},
+  {"skill": "recap", "should": true,  "query": "我做到哪了？"},
+  {"skill": "recap", "should": true,  "query": "回顧一下這幾回合的經過。"},
+  {"skill": "recap", "should": true,  "query": "我忘了梅拉剛剛說什麼委託。"},
+  {"skill": "recap", "should": false, "query": "巨鼠身上那封信寫什麼？"},
+  {"skill": "recap", "should": false, "query": "梅拉，地窖的怪聲是什麼時候開始的？"},
+  {"skill": "recap", "should": false, "query": "這座鎮上有什麼傳聞？"}
+]
