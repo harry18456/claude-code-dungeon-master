@@ -1,0 +1,10 @@
+Thumbs.db
+desktop.ini
+.DS_Store
+.claude/settings.local.json
+.game/
+*.tmp
+__pycache__/
+reports/
+# type declarations Claude Code writes beside a mod it loads
+.claude/skills/*/.claude-plugin/types/

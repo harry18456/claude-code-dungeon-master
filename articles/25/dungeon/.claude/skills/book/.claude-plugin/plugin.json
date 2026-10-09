@@ -1,0 +1,7 @@
+{
+  "name": "book",
+  "version": "0.1.0",
+  "description": "冒險手冊：明骰、數字鍵選出口、線索和地圖",
+  "author": { "name": "Harry Liou" },
+  "types": "./types/index.d.ts"
+}

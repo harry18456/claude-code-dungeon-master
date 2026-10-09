@@ -1,0 +1,22 @@
+{
+  "shortsword":     {"name": "短劍", "slot": "weapon", "damage": "d6", "finesse": true, "desc": "輕巧，用敏捷打"},
+  "cloth_cap":      {"name": "布帽", "slot": "head", "desc": "擋風而已"},
+  "helmet":         {"name": "鐵盔", "slot": "head", "ac": 1, "disadvantage": ["perception"], "desc": "AC +1，但視野差，察覺有劣勢"},
+  "leather_vest":   {"name": "皮背心", "slot": "body", "ac": 1, "desc": "AC +1"},
+  "chain_shirt":    {"name": "守衛的鎖甲", "slot": "body", "ac": 3, "disadvantage": ["stealth"], "desc": "AC +3，但很吵，潛行有劣勢"},
+  "leather_gloves": {"name": "皮手套", "slot": "hands", "advantage": ["sleight"], "desc": "偷東西有優勢"},
+  "old_boots":      {"name": "舊靴", "slot": "feet", "desc": "走路用"},
+  "soft_boots":     {"name": "軟底靴", "slot": "feet", "advantage": ["stealth"], "desc": "潛行有優勢"},
+  "strange_glasses": {"name": "奇怪的眼鏡", "slot": "head", "desc": "鏡片一圈一圈的，戴上以後頭有點暈。好像能看懂一些本來看不懂的字"},
+
+  "ale_recipe":     {"name": "梅拉的麥酒秘方", "desc": "第一步：不准讓任何人看到這張紙。第二步：見第一步。"},
+  "love_letter":    {"name": "守衛的情書草稿", "desc": "「親愛的梅拉：妳擦杯子的樣子……」後面塗掉了七次，最後一行寫著：還是算了。"},
+  "cloaked_note":   {"name": "披斗篷的人的紙條", "desc": "北邊舊路的路線圖，一個岔路口打了叉。"},
+  "squeak_letter":  {"name": "寫著「吱吱吱吱」的信", "needs": "strange_glasses",
+                     "desc_locked": "整張紙寫滿了「吱吱吱吱吱吱」。你看不懂。",
+                     "desc": "整張紙寫滿了「吱吱吱吱吱吱」。你看不懂。"},
+  "rat_portrait":   {"name": "小小的鼠臉畫像", "needs": "strange_glasses",
+                     "desc_locked": "畫著一隻睫毛很長的老鼠，背面寫著「吱吱」。",
+                     "desc": "畫著一隻睫毛很長的老鼠，背面寫著「吱吱」。"},
+  "mayor_letter":   {"name": "鎮長的信", "desc": "鎮長寫給兒子的信，落款三年前：「那件事是我不對。回家吧。」女孩說這是攔商隊的那個領頭的人掉的。三年前離家的鎮長之子，就是白狼。"}
+}

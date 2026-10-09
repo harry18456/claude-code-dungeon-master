@@ -1,0 +1,7 @@
+[
+  {"all": ["knows_road"], "text": "先把鎮上的事弄清楚，再出發去北邊舊路"},
+  {"all": ["reward_claimed"], "text": "打聽商隊走的路：二樓的女孩，或角落披斗篷的人"},
+  {"all": ["cellar_quest_accepted", "cellar_cleared"], "text": "回酒館向梅拉領 50 銅幣"},
+  {"all": ["cellar_quest_accepted"], "text": "清掉地窖的怪聲"},
+  {"all": [], "text": "跟梅拉打聽地窖的怪聲"}
+]

@@ -1,0 +1,46 @@
+{
+  "marlda": {
+    "name": "梅拉", "kind": "npc", "attitude": "friendly",
+    "look": "中年女性，滿頭紅色捲髮綁成鬆散的髮髻，手臂上有燙傷疤，眼神銳利但語氣溫和，圍裙口袋塞著一張折得很小的紙",
+    "facts": ["醉月酒館的老闆娘", "麥酒一杯兩枚銅幣", "願付 5 枚銀幣（50 銅幣）請人去看地窖的怪聲"],
+    "ac": 10, "hp": 6, "attack_bonus": 1, "damage": "d4", "wallet": "d6", "loot": "梅拉的麥酒秘方",
+    "on_provoke": [{"strike": "guard"}, {"copper": "-3"}, {"set_flag": "provoked_marlda"}, {"move": "cellar"}],
+    "on_attacked": [{"strike": "guard"}],
+    "on_down": [{"set_flag": "hostile:guard"}]
+  },
+  "guard": {
+    "name": "守衛", "kind": "npc", "attitude": "neutral", "guards": "upstairs",
+    "look": "站在樓梯口的壯漢，穿著鎖甲，雙手抱胸，胸口口袋露出一角皺巴巴的紙",
+    "facts": ["不讓客人上二樓", "說是梅拉交代的"],
+    "ac": 13, "hp": 11, "attack_bonus": 3, "damage": "d6+1", "wallet": "d4", "fines": 2, "loot": "守衛的情書草稿",
+    "leverage": {"reward_claimed": "band"},
+    "on_down": [{"set_flag": "hostile:marlda"}, {"item": "守衛的鎖甲"}]
+  },
+  "cloaked": {
+    "name": "披斗篷的人", "kind": "npc", "attitude": "neutral",
+    "look": "坐在角落桌，兜帽壓得很低，桌上攤著一張紙",
+    "facts": ["一直在打聽一個叫「白狼」的人"],
+    "ac": 12, "hp": 9, "attack_bonus": 3, "damage": "d6", "wallet": "d6",
+    "loot": ["披斗篷的人的紙條", "皮手套"], "leverage": {"bought_ale": "advantage"},
+    "on_convinced": [{"set_flag": "cloaked_talked"}, {"set_flag": "knows_road"}],
+    "on_stolen": [{"set_flag": "knows_road"}]
+  },
+  "girl": {
+    "name": "女孩", "kind": "npc", "attitude": "wary", "protected": true,
+    "look": "十來歲，從北邊逃來，不肯說名字，口袋裡露出一副怪眼鏡的鏡腳",
+    "facts": ["住在二樓梅拉收留她的房間"],
+    "ac": 10, "hp": 3, "attack_bonus": 0, "damage": "d2", "loot": "奇怪的眼鏡",
+    "leverage": {"reward_claimed": "band"},
+    "on_convinced": [{"set_flag": "girl_trusts"}, {"set_flag": "knows_road"}]
+  },
+  "giant_rat": {
+    "name": "巨鼠", "kind": "enemy", "hostile": true, "lethal": true, "ambush": true, "beast": true,
+    "look": "躲在暗處的巨鼠，眼睛在火光下發亮，背上黏著一張摺起來的紙",
+    "ac": 12, "hp": 7, "attack_bonus": 4, "damage": "d4+1", "loot": "寫著「吱吱吱吱」的信"
+  },
+  "giant_rat_2": {
+    "name": "另一隻巨鼠", "kind": "enemy", "hostile": true, "lethal": true, "beast": true,
+    "look": "從雜物堆底下鑽出來的第二隻，比第一隻小一點，牙一樣長，嘴裡叼著一小張畫",
+    "ac": 12, "hp": 5, "attack_bonus": 3, "damage": "d4", "loot": "小小的鼠臉畫像"
+  }
+}

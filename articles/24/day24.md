@@ -234,7 +234,7 @@ marketplace 是 plugin 的目錄：一個 repo 根目錄放一份 `.claude-plugi
 
 名字不能看起來像官方的：plugin 的名字用 `claude-` 開頭，`claude plugin validate` 會直接擋下；marketplace 也有一串保留的名字。保險起見，marketplace 不用 repo 的名字，叫 `dungeon-master`。plugin 的全名是「plugin 名字@marketplace 名字」，也就是 `dm@dungeon-master`，`enabledPlugins` 裡寫的就是它。
 
-### 嘗試安裝
+### 讓朋友嘗試安裝
 
 先把 repo 裡的 [`articles/24/adventure/`](https://github.com/harry18456/claude-code-dungeon-master/tree/main/articles/24/adventure) 複製到一個新資料夾，在那裡打 `claude`。
 
