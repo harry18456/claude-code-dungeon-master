@@ -1,0 +1,245 @@
+{
+  "name": "艾玲",
+  "hp": 12,
+  "max_hp": 12,
+  "copper": 3,
+  "location": "old_road",
+  "inventory": [
+    "鎮長的信"
+  ],
+  "equipment": {
+    "weapon": "shortsword",
+    "ranged": null,
+    "head": "cloth_cap",
+    "body": "leather_vest",
+    "hands": null,
+    "feet": "old_boots"
+  },
+  "arrows": 0,
+  "flags": {
+    "bribed:guard": true,
+    "convinced:girl": true,
+    "girl_trusts": true,
+    "knows_road": true,
+    "clue_letter": true,
+    "knows_son": true
+  },
+  "enemies": {},
+  "turn": 7,
+  "version": 23,
+  "recent_results": [
+    {
+      "resolution_id": "x-5781b0b1",
+      "version": 1,
+      "kind": "newgame",
+      "rolls": []
+    },
+    {
+      "resolution_id": "x-8d064395",
+      "version": 2,
+      "kind": "check",
+      "rolls": []
+    },
+    {
+      "resolution_id": "x-9358c13f",
+      "version": 3,
+      "kind": "move",
+      "rolls": []
+    },
+    {
+      "resolution_id": "x-73573602",
+      "version": 4,
+      "kind": "save",
+      "rolls": []
+    },
+    {
+      "resolution_id": "x-797d0c05",
+      "version": 5,
+      "kind": "check",
+      "rolls": [
+        {
+          "roll_id": "r-30dffc",
+          "value": 8,
+          "purpose": "check:persuade:girl"
+        }
+      ]
+    },
+    {
+      "resolution_id": "x-aecb36f9",
+      "version": 6,
+      "kind": "load",
+      "rolls": []
+    },
+    {
+      "resolution_id": "x-aafa19a7",
+      "version": 7,
+      "kind": "check",
+      "rolls": [
+        {
+          "roll_id": "r-56e905",
+          "value": 4,
+          "purpose": "check:persuade:girl"
+        }
+      ]
+    },
+    {
+      "resolution_id": "x-9a71511e",
+      "version": 8,
+      "kind": "load",
+      "rolls": []
+    },
+    {
+      "resolution_id": "x-68f0c8ad",
+      "version": 9,
+      "kind": "check",
+      "rolls": [
+        {
+          "roll_id": "r-e73222",
+          "value": 10,
+          "purpose": "check:persuade:girl"
+        }
+      ]
+    },
+    {
+      "resolution_id": "x-e07597fc",
+      "version": 10,
+      "kind": "load",
+      "rolls": []
+    },
+    {
+      "resolution_id": "x-1b125e7f",
+      "version": 11,
+      "kind": "check",
+      "rolls": [
+        {
+          "roll_id": "r-99498c",
+          "value": 10,
+          "purpose": "check:persuade:girl"
+        }
+      ]
+    },
+    {
+      "resolution_id": "x-20f6bf62",
+      "version": 12,
+      "kind": "load",
+      "rolls": []
+    },
+    {
+      "resolution_id": "x-8b7601cf",
+      "version": 13,
+      "kind": "check",
+      "rolls": [
+        {
+          "roll_id": "r-0db8df",
+          "value": 2,
+          "purpose": "check:persuade:girl"
+        }
+      ]
+    },
+    {
+      "resolution_id": "x-aaffb078",
+      "version": 14,
+      "kind": "load",
+      "rolls": []
+    },
+    {
+      "resolution_id": "x-d2d601a7",
+      "version": 15,
+      "kind": "check",
+      "rolls": [
+        {
+          "roll_id": "r-ed3843",
+          "value": 15,
+          "purpose": "check:persuade:girl"
+        }
+      ]
+    },
+    {
+      "resolution_id": "x-3d32389c",
+      "version": 16,
+      "kind": "load",
+      "rolls": []
+    },
+    {
+      "resolution_id": "x-cd63a580",
+      "version": 17,
+      "kind": "check",
+      "rolls": [
+        {
+          "roll_id": "r-de1ec0",
+          "value": 18,
+          "purpose": "check:persuade:girl"
+        }
+      ]
+    },
+    {
+      "resolution_id": "x-5ec8ddd9",
+      "version": 18,
+      "kind": "check",
+      "rolls": [
+        {
+          "roll_id": "r-753209",
+          "value": 5,
+          "purpose": "check:search:letter"
+        }
+      ]
+    },
+    {
+      "resolution_id": "x-91721d52",
+      "version": 19,
+      "kind": "save",
+      "rolls": []
+    },
+    {
+      "resolution_id": "x-1cf629a5",
+      "version": 20,
+      "kind": "load",
+      "rolls": []
+    },
+    {
+      "resolution_id": "x-fa3a0f00",
+      "version": 21,
+      "kind": "check",
+      "rolls": [
+        {
+          "roll_id": "r-007f5b",
+          "value": 15,
+          "purpose": "check:search:letter"
+        }
+      ]
+    },
+    {
+      "resolution_id": "x-794d0e09",
+      "version": 22,
+      "kind": "move",
+      "rolls": []
+    },
+    {
+      "resolution_id": "x-7a16253a",
+      "version": 23,
+      "kind": "move",
+      "rolls": []
+    }
+  ],
+  "last_result": {
+    "kind": "move",
+    "from": "tavern",
+    "to": "old_road",
+    "effects": [],
+    "revealed": [],
+    "player_hp_after": 12,
+    "copper_after": 3,
+    "location_after": "old_road",
+    "combat": false,
+    "rolls": [],
+    "dice": "（本回合無擲骰）",
+    "resolution_id": "x-7a16253a",
+    "version": 23,
+    "at": "2026-10-09T14:05:40+00:00"
+  },
+  "visited": [
+    "tavern",
+    "upstairs",
+    "old_road"
+  ]
+}

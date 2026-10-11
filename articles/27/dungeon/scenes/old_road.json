@@ -1,0 +1,29 @@
+{
+  "visible": {
+    "title": "北邊舊路",
+    "description": "出鎮往北的舊路，路面長滿雜草。一輛商隊的貨車翻倒在路邊，貨物散了一地。前方岔路口站著一個帶刀的男人，看樣子是在守路。",
+    "actors": ["bandit"],
+    "exits": {
+      "tavern": {"title": "回鎮上的醉月酒館"},
+      "wolf_camp": {"title": "岔路往林子裡的小徑", "requires": ["chapter3_open"], "guarded_by": "bandit", "locked_hint": "守路的人擋在岔路口；就算過了他，林子裡的路也還沒摸清楚"}
+    },
+    "map": {"tavern": "south", "wolf_camp": "north"},
+    "features": {
+      "wreck": {"title": "翻倒的商隊貨車", "rules": ["search"], "hint": "貨物散了一地，說不定留下什麼"}
+    }
+  },
+  "judge_only": {
+    "features": {
+      "wreck": {
+        "search": {"dc": 15, "once": "clue_manifest", "once_hint": "貨車翻遍了",
+                   "success": [{"item": "商隊清單"}, {"item": "獵人的短弓"}, {"arrows": "+10"}, {"set_flag": "clue_manifest"}], "fail": []}
+      }
+    },
+    "clues": [
+      {"flag": "clue_manifest", "journal": "清單上多了一箱沒有貨主的東西，收件人寫著鎮長。", "text": "清單上多了一箱沒有貨主的東西，收件人寫著鎮長。貨堆底下還壓著一把獵人的短弓和一袋箭。"},
+      {"flag": "passed:bandit", "journal": true, "text": "你繞過了岔路口，林子裡的小徑通往白狼的營地。"},
+      {"flag": "convinced:bandit", "journal": true, "text": "守路的人看了看你手上的東西，側身讓開：「他在林子裡等你。」"},
+      {"flag": "road_cleared", "journal": "守在岔路口的人倒下了。林子裡那條小徑，通往白狼的營地。", "text": "守路的人倒了。他身上有 5 枚銅幣，和一條往林子裡的小徑。"}
+    ]
+  }
+}
