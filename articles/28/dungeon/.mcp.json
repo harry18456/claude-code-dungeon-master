@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "dungeon": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--no-project",
+        "engine/server.py"
+      ]
+    }
+  }
+}

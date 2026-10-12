@@ -1,0 +1,10 @@
+{
+  "scenes": {
+    "tavern": "tavern",
+    "upstairs": "tavern",
+    "cellar": "cellar",
+    "old_road": "road",
+    "wolf_camp": "camp"
+  },
+  "ending": "ending"
+}
