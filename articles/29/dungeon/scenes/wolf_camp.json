@@ -1,0 +1,25 @@
+{
+  "visible": {
+    "title": "白狼的營地",
+    "description": "林子深處的空地上燒著篝火，旁邊堆著商隊的貨箱。一個灰髮的男人坐在火邊，腰間掛著長劍。他看見你並不驚訝。",
+    "actors": ["white_wolf"],
+    "exits": {
+      "old_road": {"title": "回北邊舊路"}
+    },
+    "map": {"old_road": "south"},
+    "features": {
+      "crates": {"title": "篝火旁的貨箱", "rules": ["search"], "hint": "白狼就坐在旁邊，他會看著你翻"}
+    }
+  },
+  "judge_only": {
+    "features": {
+      "crates": {
+        "search": {"dc": 15, "requires_any": [], "once": "clue_manifest", "once_hint": "貨箱翻過了",
+                   "success": [{"item": "商隊清單"}, {"set_flag": "clue_manifest"}], "fail": [{"strike": "white_wolf"}]}
+      }
+    },
+    "clues": [
+      {"flag": "clue_manifest", "text": "清單上多了一箱沒有貨主的東西，收件人寫著鎮長。"}
+    ]
+  }
+}
