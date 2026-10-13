@@ -1,0 +1,18 @@
+{
+  "name": "dm-final",
+  "displayName": "Dungeon Master (final)",
+  "version": "1.0.0",
+  "description": "地城領主完整版（Day 30）：Day 24 的 dm 再加上配樂、冒險手冊、/report 戰役報告、/equip 換裝備，和完整的世界與三種結局。CLAUDE.md、權限和存檔放在你的冒險資料夾。",
+  "author": {
+    "name": "harry18456",
+    "url": "https://github.com/harry18456"
+  },
+  "homepage": "https://github.com/harry18456/claude-code-dungeon-master",
+  "repository": "https://github.com/harry18456/claude-code-dungeon-master",
+  "keywords": [
+    "trpg",
+    "dungeon-master",
+    "game"
+  ],
+  "types": "./hooks/book/types/index.d.ts"
+}

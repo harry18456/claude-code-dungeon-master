@@ -10,6 +10,11 @@
       "name": "dm",
       "source": "./plugins/dm",
       "description": "地城領主：說話方式 dm-voice、規則裁判、存讀檔、前情提要、查帳、守衛、日誌和音效，加上 dungeon 引擎、MCP server、場景和規則書。CLAUDE.md、權限和存檔放在你的冒險資料夾。"
+    },
+    {
+      "name": "dm-final",
+      "source": "./plugins/dm-final",
+      "description": "地城領主完整版（Day 30）：Day 24 的 dm 再加上配樂、冒險手冊、/report 戰役報告、/equip 換裝備，和完整的世界與三種結局。CLAUDE.md、權限和存檔放在你的冒險資料夾。"
     }
   ]
 }

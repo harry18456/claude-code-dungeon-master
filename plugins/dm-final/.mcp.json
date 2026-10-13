@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "dungeon": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--no-project",
+        "${CLAUDE_PLUGIN_ROOT}/engine/server.py"
+      ]
+    }
+  }
+}
