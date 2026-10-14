@@ -1,0 +1,30 @@
+{
+  "visible": {
+    "title": "舊地窖",
+    "description": "石階盡頭一片潮濕的黑暗，只有從樓梯口透下來的一點火光。空氣裡有霉味和某種動物的騷味，不止一雙眼睛在暗處發亮。角落堆著一堆雜物。",
+    "actors": ["giant_rat", "giant_rat_2"],
+    "exits": {
+      "tavern": {"title": "回酒館的石階"}
+    },
+    "map": {"tavern": "east"},
+    "features": {
+      "rubble": {"title": "角落的雜物堆", "rules": ["search"], "hint": "看起來很久沒人動過"}
+    }
+  },
+  "judge_only": {
+    "on_all_down": {
+      "actors": ["giant_rat", "giant_rat_2"],
+      "outcomes": [{"set_flag": "cellar_cleared"}]
+    },
+    "features": {
+      "rubble": {
+        "search": {"dc": 12, "once": "cellar_loot_searched", "once_hint": "雜物堆已經翻過了，沒有別的東西",
+                   "success": [{"copper": "+d6"}, {"set_flag": "cellar_loot_searched"}], "fail": []}
+      }
+    },
+    "clues": [
+      {"flag": "down:giant_rat", "text": "第一隻巨鼠不動了。雜物堆底下還有窸窣聲。"},
+      {"flag": "cellar_cleared", "journal": true, "text": "地窖安靜下來了。晚上的怪聲，來源就是這窩巨鼠。"}
+    ]
+  }
+}
